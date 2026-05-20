@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ulead_course"
+version = "0.1.0"
+description = "Benchmarking parallel computing frameworks across different backends."
+readme = "README.md" # Recommended to have a README
+requires-python = ">=3.11" # <-- Corrected: This is now a top-level project field
+
+dependencies = [
+    "numpy",
+    "numba",
+    "matplotlib",
+    "scipy",
+    "jupyterlab",
+    "ipykernel",
+    # Base dependencies for the accelerators
+    "dask[complete]",
+    "jax[cuda12]",
+    "dask-cuda",
+    "rapids", # Pinning version for stability in tests
+    "cupy-cuda12x",
+    "joblib>=1.5.3",
+]
+
+[tool.jupyter]
+lab = "jupyter lab --allow-root"
