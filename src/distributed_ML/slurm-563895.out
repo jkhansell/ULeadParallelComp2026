@@ -1,0 +1,46 @@
+Run 'mamba init' to be able to run mamba activate/deactivate
+and start a new shell session. Or use conda to activate/deactivate.
+
+2026-06-10 13:35:21,957 - distributed.nanny - INFO -         Start Nanny at: 'tcp://11.0.0.108:42895'
+2026-06-10 13:35:23,815 - distributed.preloading - INFO - Creating preload: dask_cuda.initialize
+2026-06-10 13:35:23,815 - distributed.preloading - INFO - Import preload module: dask_cuda.initialize
+2026-06-10 13:35:29,200 - distributed.preloading - INFO - Run preload setup: dask_cuda.initialize
+2026-06-10 13:35:29,200 - distributed.worker - INFO -       Start worker at:     tcp://11.0.0.108:33333
+2026-06-10 13:35:29,200 - distributed.worker - INFO -          Listening to:     tcp://11.0.0.108:33333
+2026-06-10 13:35:29,200 - distributed.worker - INFO -           Worker name:             SLURMCluster-0
+2026-06-10 13:35:29,200 - distributed.worker - INFO -          dashboard at:           11.0.0.108:36541
+2026-06-10 13:35:29,200 - distributed.worker - INFO - Waiting to connect to:      tcp://11.0.0.136:8786
+2026-06-10 13:35:29,200 - distributed.worker - INFO - -------------------------------------------------
+2026-06-10 13:35:29,200 - distributed.worker - INFO -               Threads:                          4
+2026-06-10 13:35:29,200 - distributed.worker - INFO -                Memory:                  27.94 GiB
+2026-06-10 13:35:29,200 - distributed.worker - INFO -       Local Directory: /tmp/dask-scratch-space/worker-827k3th9
+2026-06-10 13:35:29,201 - distributed.worker - INFO - Starting Worker plugin CUDFSetup-a4e24e6b-bcd2-4dc1-92a1-9360c35489cb
+2026-06-10 13:35:35,418 - distributed.worker - INFO - Starting Worker plugin PreImport-be8aa322-28f2-46f9-9ea2-e289fbb8b407
+2026-06-10 13:35:35,418 - distributed.worker - INFO - Starting Worker plugin CPUAffinity-160014ca-2289-422b-a3c4-9a489a626706
+2026-06-10 13:35:35,418 - distributed.worker - INFO - Starting Worker plugin RMMSetup-c5d2c2a2-9aaa-4e4d-9267-6493b90c98d7
+2026-06-10 13:35:35,419 - distributed.worker - INFO - -------------------------------------------------
+2026-06-10 13:35:35,505 - distributed.worker - INFO - Starting Worker plugin shuffle
+2026-06-10 13:35:35,506 - distributed.worker - INFO -         Registered to:      tcp://11.0.0.136:8786
+2026-06-10 13:35:35,506 - distributed.worker - INFO - -------------------------------------------------
+2026-06-10 13:35:35,506 - distributed.core - INFO - Starting established connection to tcp://11.0.0.136:8786
+2026-06-10 13:43:30,714 - distributed.worker - INFO - Run out-of-band function 'gpu_test'
+2026-06-10 13:43:35,060 - distributed.core - INFO - Event loop was unresponsive in Worker for 4.35s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+2026-06-10 13:43:55,503 - distributed.worker - INFO - Run out-of-band function 'gpu_test'
+/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/protocol/pickle.py:90: ExperimentalWarning: DaskStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  return pickle.loads(x, buffers=buffers)
+/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/protocol/pickle.py:90: ExperimentalWarning: DaskStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  return pickle.loads(x, buffers=buffers)
+/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/protocol/pickle.py:90: ExperimentalWarning: DaskStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  return pickle.loads(x, buffers=buffers)
+/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/protocol/pickle.py:90: ExperimentalWarning: DaskStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  return pickle.loads(x, buffers=buffers)
+/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/protocol/pickle.py:90: ExperimentalWarning: DaskStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  return pickle.loads(x, buffers=buffers)
+/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/protocol/pickle.py:90: ExperimentalWarning: DaskStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  return pickle.loads(x, buffers=buffers)
+/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/protocol/pickle.py:90: ExperimentalWarning: DaskStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  return pickle.loads(x, buffers=buffers)
+2026-06-10 13:47:14,288 - distributed.core - INFO - Event loop was unresponsive in Worker for 122.30s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+2026-06-10 13:47:33,009 - distributed.core - INFO - Event loop was unresponsive in Worker for 18.42s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+2026-06-10 13:48:14,288 - distributed.core - INFO - Event loop was unresponsive in Worker for 41.28s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+slurmstepd: error: *** JOB 563895 ON nukwa-03.cnca CANCELLED AT 2026-06-10T13:50:03 ***

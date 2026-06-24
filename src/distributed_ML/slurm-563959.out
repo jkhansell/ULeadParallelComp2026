@@ -1,0 +1,109 @@
+Run 'mamba init' to be able to run mamba activate/deactivate
+and start a new shell session. Or use conda to activate/deactivate.
+
+2026-06-10 15:23:37,553 - distributed.nanny - INFO -         Start Nanny at: 'tcp://11.0.0.111:40095'
+2026-06-10 15:23:42,440 - distributed.preloading - INFO - Creating preload: dask_cuda.initialize
+2026-06-10 15:23:42,440 - distributed.preloading - INFO - Import preload module: dask_cuda.initialize
+2026-06-10 15:23:46,790 - distributed.preloading - INFO - Run preload setup: dask_cuda.initialize
+2026-06-10 15:23:46,792 - distributed.worker - INFO -       Start worker at:     tcp://11.0.0.111:37609
+2026-06-10 15:23:46,792 - distributed.worker - INFO -          Listening to:     tcp://11.0.0.111:37609
+2026-06-10 15:23:46,792 - distributed.worker - INFO -           Worker name:             SLURMCluster-1
+2026-06-10 15:23:46,792 - distributed.worker - INFO -          dashboard at:           11.0.0.111:38835
+2026-06-10 15:23:46,792 - distributed.worker - INFO - Waiting to connect to:      tcp://11.0.0.136:8786
+2026-06-10 15:23:46,792 - distributed.worker - INFO - -------------------------------------------------
+2026-06-10 15:23:46,792 - distributed.worker - INFO -               Threads:                          1
+2026-06-10 15:23:46,792 - distributed.worker - INFO -                Memory:                  27.94 GiB
+2026-06-10 15:23:46,792 - distributed.worker - INFO -       Local Directory: /tmp/dask-scratch-space/worker-2g6b7y9b
+2026-06-10 15:23:46,793 - distributed.worker - INFO - Starting Worker plugin PreImport-01e636ab-fdfd-47ad-9855-05c3c563d9e9
+2026-06-10 15:23:46,793 - distributed.worker - INFO - Starting Worker plugin CUDFSetup-c46352ae-3453-4abd-ae3f-98e1ce115699
+2026-06-10 15:23:51,518 - distributed.worker - INFO - Starting Worker plugin RMMSetup-36b5cb34-fe51-4a64-b105-085818257e57
+2026-06-10 15:23:51,519 - distributed.worker - INFO - Starting Worker plugin CPUAffinity-bdf3f3a5-de1c-469b-9c86-66348bd5d1a8
+2026-06-10 15:23:51,519 - distributed.worker - INFO - -------------------------------------------------
+2026-06-10 15:23:51,834 - distributed.worker - INFO - Starting Worker plugin shuffle
+2026-06-10 15:23:51,835 - distributed.worker - INFO -         Registered to:      tcp://11.0.0.136:8786
+2026-06-10 15:23:51,835 - distributed.worker - INFO - -------------------------------------------------
+2026-06-10 15:23:51,836 - distributed.core - INFO - Starting established connection to tcp://11.0.0.136:8786
+2026-06-10 15:24:02,683 - distributed.worker - INFO - Run out-of-band function 'gpu_test'
+2026-06-10 15:24:06,565 - distributed.core - INFO - Event loop was unresponsive in Worker for 3.89s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/protocol/pickle.py:92: ExperimentalWarning: DaskStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  return pickle.loads(x)
+2026-06-10 15:24:29,084 - distributed.core - INFO - Event loop was unresponsive in Worker for 3.15s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+2026-06-10 15:26:35,928 - distributed.core - INFO - Event loop was unresponsive in Worker for 116.89s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+[32m[I 2026-06-10 15:26:38,677][0m Trial 0 finished with value: 0.824011066825772 and parameters: {'n_estimators': 250, 'max_depth': 16, 'max_features': 0.867861482811712}. Best is trial 0 with value: 0.824011066825772.[0m
+/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/protocol/pickle.py:92: ExperimentalWarning: DaskStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  return pickle.loads(x)
+2026-06-10 15:28:10,293 - distributed.core - INFO - Event loop was unresponsive in Worker for 86.84s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+[32m[I 2026-06-10 15:28:10,897][0m Trial 3 finished with value: 0.8167516729430391 and parameters: {'n_estimators': 300, 'max_depth': 10, 'max_features': 0.553258510473001}. Best is trial 0 with value: 0.824011066825772.[0m
+/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/protocol/pickle.py:92: ExperimentalWarning: DaskStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  return pickle.loads(x)
+2026-06-10 15:28:33,095 - distributed.core - INFO - Event loop was unresponsive in Worker for 17.46s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+[32m[I 2026-06-10 15:28:33,371][0m Trial 7 finished with value: 0.8141740025139735 and parameters: {'n_estimators': 75, 'max_depth': 7, 'max_features': 0.6249225833456702}. Best is trial 0 with value: 0.824011066825772.[0m
+/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/protocol/pickle.py:92: ExperimentalWarning: DaskStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  return pickle.loads(x)
+2026-06-10 15:29:03,499 - distributed.core - INFO - Event loop was unresponsive in Worker for 25.40s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+[32m[I 2026-06-10 15:29:04,047][0m Trial 9 finished with value: 0.8195343036154679 and parameters: {'n_estimators': 75, 'max_depth': 12, 'max_features': 0.8037054401625534}. Best is trial 0 with value: 0.824011066825772.[0m
+/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/protocol/pickle.py:92: ExperimentalWarning: DaskStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  return pickle.loads(x)
+2026-06-10 15:31:19,513 - distributed.core - INFO - Event loop was unresponsive in Worker for 130.58s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+2026-06-10 15:31:24,258 - distributed.core - INFO - Event loop was unresponsive in Worker for 4.75s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+[32m[I 2026-06-10 15:31:24,824][0m Trial 11 finished with value: 0.8232826617503605 and parameters: {'n_estimators': 300, 'max_depth': 16, 'max_features': 0.5153716939167292}. Best is trial 0 with value: 0.824011066825772.[0m
+2026-06-10 15:33:12,564 - distributed.core - INFO - Event loop was unresponsive in Worker for 103.19s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+2026-06-10 15:33:16,364 - distributed.core - INFO - Event loop was unresponsive in Worker for 3.80s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+[32m[I 2026-06-10 15:33:16,874][0m Trial 13 finished with value: 0.8232158827237007 and parameters: {'n_estimators': 250, 'max_depth': 16, 'max_features': 0.5185817964121415}. Best is trial 0 with value: 0.824011066825772.[0m
+2026-06-10 15:52:19,908 - distributed.worker - INFO - Run out-of-band function 'lambda'
+2026-06-10 15:54:43,393 - distributed.worker - INFO - Run out-of-band function '_get_device_size'
+2026-06-10 15:55:21,521 - distributed.worker - INFO - Run out-of-band function 'lambda'
+2026-06-10 15:57:11,795 - distributed.worker - INFO - Run out-of-band function '_get_device_size'
+2026-06-10 16:00:45,840 - distributed.worker - ERROR - Compute Failed
+Key:       process_single_file-494fff3624d30404a37b2429711e4cda
+State:     executing
+Task:  <Task 'process_single_file-494fff3624d30404a37b2429711e4cda' process_single_file(...)>
+Exception: 'ArrowInvalid("Error creating dataset. Could not read schema from \'/data/jovillalobos/kaggle/full_data_flightdelay.csv\'. Is this a \'parquet\' file?: Could not open Parquet input source \'/data/jovillalobos/kaggle/full_data_flightdelay.csv\': Parquet magic bytes not found in footer. Either the file is corrupted or this is not a parquet file.")'
+Traceback: '  File "/tmp/ipykernel_1489638/3560094217.py", line 15, in process_single_file\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/cudf/utils/performance_tracking.py", line 51, in wrapper\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/cudf/io/parquet.py", line 838, in read_parquet\n    ) = _process_dataset(\n        ^^^^^^^^^^^^^^^^^\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/cudf/utils/performance_tracking.py", line 51, in wrapper\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/cudf/io/parquet.py", line 649, in _process_dataset\n    dataset = ds.dataset(\n              ^^^^^^^^^^^\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/pyarrow/dataset.py", line 794, in dataset\n    return _filesystem_dataset(source, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/pyarrow/dataset.py", line 486, in _filesystem_dataset\n    return factory.finish(schema)\n           ^^^^^^^^^^^^^^^^^^^^^^\n  File "pyarrow/_dataset.pyx", line 3138, in pyarrow._dataset.DatasetFactory.finish\n  File "pyarrow/error.pxi", line 155, in pyarrow.lib.pyarrow_internal_check_status\n  File "pyarrow/error.pxi", line 92, in pyarrow.lib.check_status\n'
+
+2026-06-10 16:41:04,590 - distributed.core - INFO - Connection to tcp://11.0.0.136:8786 has been closed.
+2026-06-10 16:41:04,591 - distributed.worker - INFO - Stopping worker at tcp://11.0.0.111:37609. Reason: worker-handle-scheduler-connection-broken
+2026-06-10 16:41:04,595 - distributed.nanny - INFO - Closing Nanny gracefully at 'tcp://11.0.0.111:40095'. Reason: worker-handle-scheduler-connection-broken
+2026-06-10 16:41:04,595 - distributed.worker - INFO - Removing Worker plugin PreImport-01e636ab-fdfd-47ad-9855-05c3c563d9e9
+2026-06-10 16:41:04,596 - distributed.worker - INFO - Removing Worker plugin CUDFSetup-c46352ae-3453-4abd-ae3f-98e1ce115699
+2026-06-10 16:41:04,596 - distributed.worker - INFO - Removing Worker plugin RMMSetup-36b5cb34-fe51-4a64-b105-085818257e57
+2026-06-10 16:41:04,596 - distributed.worker - INFO - Removing Worker plugin CPUAffinity-bdf3f3a5-de1c-469b-9c86-66348bd5d1a8
+2026-06-10 16:41:04,596 - distributed.worker - INFO - Removing Worker plugin shuffle
+2026-06-10 16:41:06,987 - distributed.client - ERROR - 
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/comm/core.py", line 342, in connect
+    comm = await wait_for(
+           ^^^^^^^^^^^^^^^
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/utils.py", line 1923, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/comm/tcp.py", line 560, in connect
+    convert_stream_closed_error(self, e)
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/comm/tcp.py", line 143, in convert_stream_closed_error
+    raise CommClosedError(f"in {obj}: {exc.__class__.__name__}: {exc}") from exc
+distributed.comm.core.CommClosedError: in <distributed.comm.tcp.TCPConnector object at 0x7f6688d90290>: ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/utils.py", line 818, in wrapper
+    return await func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 1519, in _reconnect
+    await self._ensure_connected(timeout=timeout)
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 1549, in _ensure_connected
+    comm = await connect(
+           ^^^^^^^^^^^^^^
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/comm/core.py", line 366, in connect
+    await asyncio.sleep(backoff)
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/asyncio/tasks.py", line 665, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+2026-06-10 16:41:06,994 - distributed.nanny - INFO - Worker closed
+2026-06-10 16:41:14,426 - distributed.nanny - INFO - Closing Nanny at 'tcp://11.0.0.111:40095'. Reason: nanny-close-gracefully
+2026-06-10 16:41:14,426 - distributed.nanny - INFO - Nanny at 'tcp://11.0.0.111:40095' closed.

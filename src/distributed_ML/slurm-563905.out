@@ -1,0 +1,995 @@
+Run 'mamba init' to be able to run mamba activate/deactivate
+and start a new shell session. Or use conda to activate/deactivate.
+
+2026-06-10 13:59:23,962 - distributed.nanny - INFO -         Start Nanny at: 'tcp://11.0.0.105:36535'
+2026-06-10 13:59:26,038 - distributed.preloading - INFO - Creating preload: dask_cuda.initialize
+2026-06-10 13:59:26,038 - distributed.preloading - INFO - Import preload module: dask_cuda.initialize
+2026-06-10 13:59:26,739 - distributed.preloading - INFO - Run preload setup: dask_cuda.initialize
+2026-06-10 13:59:26,739 - distributed.worker - INFO -       Start worker at:     tcp://11.0.0.105:43769
+2026-06-10 13:59:26,739 - distributed.worker - INFO -          Listening to:     tcp://11.0.0.105:43769
+2026-06-10 13:59:26,739 - distributed.worker - INFO -           Worker name:             SLURMCluster-1
+2026-06-10 13:59:26,739 - distributed.worker - INFO -          dashboard at:           11.0.0.105:41205
+2026-06-10 13:59:26,739 - distributed.worker - INFO - Waiting to connect to:      tcp://11.0.0.136:8786
+2026-06-10 13:59:26,739 - distributed.worker - INFO - -------------------------------------------------
+2026-06-10 13:59:26,739 - distributed.worker - INFO -               Threads:                          4
+2026-06-10 13:59:26,739 - distributed.worker - INFO -                Memory:                  27.94 GiB
+2026-06-10 13:59:26,739 - distributed.worker - INFO -       Local Directory: /tmp/dask-scratch-space/worker-0w9he1ou
+2026-06-10 13:59:26,740 - distributed.worker - INFO - Starting Worker plugin PreImport-664b3879-c44a-4c08-9f69-220445388465
+2026-06-10 13:59:26,740 - distributed.worker - INFO - Starting Worker plugin CPUAffinity-e013d978-ed52-4091-80d5-8406bd5daa70
+2026-06-10 13:59:26,740 - distributed.worker - INFO - Starting Worker plugin RMMSetup-5597690d-bda5-40e8-bd81-fdada4a5c9ed
+2026-06-10 13:59:26,740 - distributed.worker - INFO - Starting Worker plugin CUDFSetup-5d0d4043-8bd3-483b-9f28-b2100620886e
+2026-06-10 13:59:27,338 - distributed.worker - INFO - -------------------------------------------------
+2026-06-10 13:59:27,456 - distributed.worker - INFO - Starting Worker plugin shuffle
+2026-06-10 13:59:27,458 - distributed.worker - INFO -         Registered to:      tcp://11.0.0.136:8786
+2026-06-10 13:59:27,458 - distributed.worker - INFO - -------------------------------------------------
+2026-06-10 13:59:27,460 - distributed.core - INFO - Starting established connection to tcp://11.0.0.136:8786
+/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/protocol/pickle.py:92: ExperimentalWarning: DaskStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  return pickle.loads(x)
+[33m[W 2026-06-10 14:06:06,255][0m Trial 4 failed with parameters: {} because of the following error: NameError("name 'objective' is not defined").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>
+NameError: name 'objective' is not defined. Did you mean: 'object'?
+[33m[W 2026-06-10 14:06:06,263][0m Trial 4 failed with value None.[0m
+[33m[W 2026-06-10 14:06:06,264][0m Trial 5 failed with parameters: {} because of the following error: NameError("name 'objective' is not defined").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>
+NameError: name 'objective' is not defined. Did you mean: 'object'?
+[33m[W 2026-06-10 14:06:06,272][0m Trial 5 failed with value None.[0m
+2026-06-10 14:06:06,279 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-09dd7d4f-63e2-43ff-b922-2452207c5733
+State:     executing
+Task:  <Task 'optimize-09dd7d4f-63e2-43ff-b922-2452207c5733' optimize(..., ...)>
+Exception: 'NameError("name \'objective\' is not defined")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>\n'
+
+2026-06-10 14:06:06,279 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-2222ee5d-425c-4ace-a3f6-416b98d5c04a
+State:     executing
+Task:  <Task 'optimize-2222ee5d-425c-4ace-a3f6-416b98d5c04a' optimize(..., ...)>
+Exception: 'NameError("name \'objective\' is not defined")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>\n'
+
+[33m[W 2026-06-10 14:06:06,282][0m Trial 6 failed with parameters: {} because of the following error: NameError("name 'objective' is not defined").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>
+NameError: name 'objective' is not defined. Did you mean: 'object'?
+[33m[W 2026-06-10 14:06:06,287][0m Trial 6 failed with value None.[0m
+2026-06-10 14:06:06,291 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-a8204f3f-3b7a-4c87-aea2-55ef3a4203b1
+State:     executing
+Task:  <Task 'optimize-a8204f3f-3b7a-4c87-aea2-55ef3a4203b1' optimize(..., ...)>
+Exception: 'NameError("name \'objective\' is not defined")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>\n'
+
+[33m[W 2026-06-10 14:06:06,300][0m Trial 10 failed with parameters: {} because of the following error: NameError("name 'objective' is not defined").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>
+NameError: name 'objective' is not defined. Did you mean: 'object'?
+[33m[W 2026-06-10 14:06:06,305][0m Trial 10 failed with value None.[0m
+[33m[W 2026-06-10 14:06:06,306][0m Trial 11 failed with parameters: {} because of the following error: NameError("name 'objective' is not defined").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>
+NameError: name 'objective' is not defined. Did you mean: 'object'?
+[33m[W 2026-06-10 14:06:06,311][0m Trial 11 failed with value None.[0m
+2026-06-10 14:06:06,315 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-5afa7b3b-6e21-4438-8556-a42729f52180
+State:     executing
+Task:  <Task 'optimize-5afa7b3b-6e21-4438-8556-a42729f52180' optimize(..., ...)>
+Exception: 'NameError("name \'objective\' is not defined")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>\n'
+
+[33m[W 2026-06-10 14:06:06,312][0m Trial 12 failed with parameters: {} because of the following error: NameError("name 'objective' is not defined").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>
+NameError: name 'objective' is not defined. Did you mean: 'object'?
+2026-06-10 14:06:06,323 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-13f53db0-0653-49e3-9115-b31b5ce3c451
+State:     executing
+Task:  <Task 'optimize-13f53db0-0653-49e3-9115-b31b5ce3c451' optimize(..., ...)>
+Exception: 'NameError("name \'objective\' is not defined")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>\n'
+
+[33m[W 2026-06-10 14:06:06,325][0m Trial 12 failed with value None.[0m
+2026-06-10 14:06:06,332 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-55ae6771-bdd7-4a87-9fe1-7d895cf251c8
+State:     executing
+Task:  <Task 'optimize-55ae6771-bdd7-4a87-9fe1-7d895cf251c8' optimize(..., ...)>
+Exception: 'NameError("name \'objective\' is not defined")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>\n'
+
+[33m[W 2026-06-10 14:06:06,333][0m Trial 13 failed with parameters: {} because of the following error: NameError("name 'objective' is not defined").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>
+NameError: name 'objective' is not defined. Did you mean: 'object'?
+[33m[W 2026-06-10 14:06:06,338][0m Trial 13 failed with value None.[0m
+2026-06-10 14:06:06,342 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-130feb06-dea7-4a81-8730-fa2ded2fba92
+State:     executing
+Task:  <Task 'optimize-130feb06-dea7-4a81-8730-fa2ded2fba92' optimize(..., ...)>
+Exception: 'NameError("name \'objective\' is not defined")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>\n'
+
+[33m[W 2026-06-10 14:06:06,345][0m Trial 14 failed with parameters: {} because of the following error: NameError("name 'objective' is not defined").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>
+NameError: name 'objective' is not defined. Did you mean: 'object'?
+[33m[W 2026-06-10 14:06:06,349][0m Trial 14 failed with value None.[0m
+2026-06-10 14:06:06,353 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-ae2542c3-491f-4fb6-b473-7fa20be49c35
+State:     executing
+Task:  <Task 'optimize-ae2542c3-491f-4fb6-b473-7fa20be49c35' optimize(..., ...)>
+Exception: 'NameError("name \'objective\' is not defined")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>\n'
+
+2026-06-10 14:06:20,521 - distributed.worker - INFO - Run out-of-band function 'gpu_test'
+[33m[W 2026-06-10 14:06:27,631][0m Trial 4 failed with parameters: {} because of the following error: RuntimeError("<class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>
+  File "/tmp/ipykernel_1473657/172870663.py", line 11, in objective
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result
+    self._verify_initialized()
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized
+    raise RuntimeError(
+RuntimeError: <class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.
+[33m[W 2026-06-10 14:06:27,632][0m Trial 4 failed with value None.[0m
+2026-06-10 14:06:27,637 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-46a5a8f7-8ff7-4792-b90d-7f22f1dc1a2e
+State:     executing
+Task:  <Task 'optimize-46a5a8f7-8ff7-4792-b90d-7f22f1dc1a2e' optimize(..., ...)>
+Exception: 'RuntimeError("<class \'distributed.client.Future\'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>\n  File "/tmp/ipykernel_1473657/172870663.py", line 11, in objective\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result\n    self._verify_initialized()\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized\n    raise RuntimeError(\n'
+
+[33m[W 2026-06-10 14:06:27,662][0m Trial 7 failed with parameters: {} because of the following error: RuntimeError("<class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>
+  File "/tmp/ipykernel_1473657/172870663.py", line 11, in objective
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result
+    self._verify_initialized()
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized
+    raise RuntimeError(
+RuntimeError: <class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.
+[33m[W 2026-06-10 14:06:27,663][0m Trial 7 failed with value None.[0m
+2026-06-10 14:06:27,668 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-6dade101-5e13-4ef5-a2da-7fe2aefe126f
+State:     executing
+Task:  <Task 'optimize-6dade101-5e13-4ef5-a2da-7fe2aefe126f' optimize(..., ...)>
+Exception: 'RuntimeError("<class \'distributed.client.Future\'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>\n  File "/tmp/ipykernel_1473657/172870663.py", line 11, in objective\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result\n    self._verify_initialized()\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized\n    raise RuntimeError(\n'
+
+[33m[W 2026-06-10 14:06:27,673][0m Trial 5 failed with parameters: {} because of the following error: RuntimeError("<class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>
+  File "/tmp/ipykernel_1473657/172870663.py", line 11, in objective
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result
+    self._verify_initialized()
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized
+    raise RuntimeError(
+RuntimeError: <class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.
+[33m[W 2026-06-10 14:06:27,674][0m Trial 1 failed with parameters: {} because of the following error: RuntimeError("<class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>
+  File "/tmp/ipykernel_1473657/172870663.py", line 11, in objective
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result
+    self._verify_initialized()
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized
+    raise RuntimeError(
+RuntimeError: <class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.
+[33m[W 2026-06-10 14:06:27,674][0m Trial 5 failed with value None.[0m
+[33m[W 2026-06-10 14:06:27,676][0m Trial 1 failed with value None.[0m
+2026-06-10 14:06:27,689 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-e91f3755-1dee-454b-9aae-60aa44517328
+State:     executing
+Task:  <Task 'optimize-e91f3755-1dee-454b-9aae-60aa44517328' optimize(..., ...)>
+Exception: 'RuntimeError("<class \'distributed.client.Future\'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>\n  File "/tmp/ipykernel_1473657/172870663.py", line 11, in objective\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result\n    self._verify_initialized()\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized\n    raise RuntimeError(\n'
+
+2026-06-10 14:06:27,690 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-56523390-abfb-4ddd-9657-973ce8e0b1c6
+State:     executing
+Task:  <Task 'optimize-56523390-abfb-4ddd-9657-973ce8e0b1c6' optimize(..., ...)>
+Exception: 'RuntimeError("<class \'distributed.client.Future\'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>\n  File "/tmp/ipykernel_1473657/172870663.py", line 11, in objective\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result\n    self._verify_initialized()\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized\n    raise RuntimeError(\n'
+
+[33m[W 2026-06-10 14:06:27,690][0m Trial 13 failed with parameters: {} because of the following error: RuntimeError("<class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>
+  File "/tmp/ipykernel_1473657/172870663.py", line 11, in objective
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result
+    self._verify_initialized()
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized
+    raise RuntimeError(
+RuntimeError: <class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.
+[33m[W 2026-06-10 14:06:27,692][0m Trial 13 failed with value None.[0m
+2026-06-10 14:06:27,697 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-2e9303ae-6861-45eb-aa68-5bf045bc0b06
+State:     executing
+Task:  <Task 'optimize-2e9303ae-6861-45eb-aa68-5bf045bc0b06' optimize(..., ...)>
+Exception: 'RuntimeError("<class \'distributed.client.Future\'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>\n  File "/tmp/ipykernel_1473657/172870663.py", line 11, in objective\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result\n    self._verify_initialized()\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized\n    raise RuntimeError(\n'
+
+[33m[W 2026-06-10 14:07:15,944][0m Trial 1 failed with parameters: {} because of the following error: TypeError('objective() takes 1 positional argument but 5 were given').[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>
+TypeError: objective() takes 1 positional argument but 5 were given
+[33m[W 2026-06-10 14:07:15,946][0m Trial 1 failed with value None.[0m
+2026-06-10 14:07:15,951 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-ebd6df4f-02bc-4651-9609-38d590f55033
+State:     executing
+Task:  <Task 'optimize-ebd6df4f-02bc-4651-9609-38d590f55033' optimize(..., ...)>
+Exception: "TypeError('objective() takes 1 positional argument but 5 were given')"
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>\n'
+
+[33m[W 2026-06-10 14:07:16,051][0m Trial 3 failed with parameters: {} because of the following error: TypeError('objective() takes 1 positional argument but 5 were given').[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>
+TypeError: objective() takes 1 positional argument but 5 were given
+[33m[W 2026-06-10 14:07:16,053][0m Trial 3 failed with value None.[0m
+[33m[W 2026-06-10 14:07:16,055][0m Trial 6 failed with parameters: {} because of the following error: TypeError('objective() takes 1 positional argument but 5 were given').[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>
+TypeError: objective() takes 1 positional argument but 5 were given
+2026-06-10 14:07:16,061 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-a0ef1637-22bf-4fbc-a385-10365fad16e8
+State:     executing
+Task:  <Task 'optimize-a0ef1637-22bf-4fbc-a385-10365fad16e8' optimize(..., ...)>
+Exception: "TypeError('objective() takes 1 positional argument but 5 were given')"
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>\n'
+
+[33m[W 2026-06-10 14:07:16,060][0m Trial 7 failed with parameters: {} because of the following error: TypeError('objective() takes 1 positional argument but 5 were given').[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>
+TypeError: objective() takes 1 positional argument but 5 were given
+[33m[W 2026-06-10 14:07:16,061][0m Trial 8 failed with parameters: {} because of the following error: TypeError('objective() takes 1 positional argument but 5 were given').[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>
+TypeError: objective() takes 1 positional argument but 5 were given
+[33m[W 2026-06-10 14:07:16,061][0m Trial 6 failed with value None.[0m
+[33m[W 2026-06-10 14:07:16,064][0m Trial 7 failed with value None.[0m
+2026-06-10 14:07:16,071 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-3a432796-3929-4fe2-84df-c330b2b246be
+State:     executing
+Task:  <Task 'optimize-3a432796-3929-4fe2-84df-c330b2b246be' optimize(..., ...)>
+Exception: "TypeError('objective() takes 1 positional argument but 5 were given')"
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>\n'
+
+[33m[W 2026-06-10 14:07:16,066][0m Trial 8 failed with value None.[0m
+2026-06-10 14:07:16,076 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-355b6b2a-63d1-4f88-942d-b74dc9353593
+State:     executing
+Task:  <Task 'optimize-355b6b2a-63d1-4f88-942d-b74dc9353593' optimize(..., ...)>
+Exception: "TypeError('objective() takes 1 positional argument but 5 were given')"
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>\n'
+
+2026-06-10 14:07:16,081 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-e609dca3-3630-41cc-96c7-18c72232c8d6
+State:     executing
+Task:  <Task 'optimize-e609dca3-3630-41cc-96c7-18c72232c8d6' optimize(..., ...)>
+Exception: "TypeError('objective() takes 1 positional argument but 5 were given')"
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>\n'
+
+[33m[W 2026-06-10 14:07:16,083][0m Trial 14 failed with parameters: {} because of the following error: TypeError('objective() takes 1 positional argument but 5 were given').[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>
+TypeError: objective() takes 1 positional argument but 5 were given
+[33m[W 2026-06-10 14:07:16,084][0m Trial 14 failed with value None.[0m
+2026-06-10 14:07:16,087 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-647eb584-fdd8-4bcf-89f9-700088b620b8
+State:     executing
+Task:  <Task 'optimize-647eb584-fdd8-4bcf-89f9-700088b620b8' optimize(..., ...)>
+Exception: "TypeError('objective() takes 1 positional argument but 5 were given')"
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>\n'
+
+[33m[W 2026-06-10 14:07:26,591][0m Trial 1 failed with parameters: {} because of the following error: RuntimeError("<class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/1542698560.py", line 11, in objective
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result
+    self._verify_initialized()
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized
+    raise RuntimeError(
+RuntimeError: <class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.
+[33m[W 2026-06-10 14:07:26,593][0m Trial 1 failed with value None.[0m
+2026-06-10 14:07:26,597 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-9e42d577-7e29-498c-933a-fecda01f9dd9
+State:     executing
+Task:  <Task 'optimize-9e42d577-7e29-498c-933a-fecda01f9dd9' optimize(..., ...)>
+Exception: 'RuntimeError("<class \'distributed.client.Future\'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/1542698560.py", line 11, in objective\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result\n    self._verify_initialized()\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized\n    raise RuntimeError(\n'
+
+[33m[W 2026-06-10 14:07:26,701][0m Trial 8 failed with parameters: {} because of the following error: RuntimeError("<class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/1542698560.py", line 11, in objective
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result
+    self._verify_initialized()
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized
+    raise RuntimeError(
+RuntimeError: <class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.
+[33m[W 2026-06-10 14:07:26,702][0m Trial 8 failed with value None.[0m
+2026-06-10 14:07:26,708 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-571cbcc4-e75d-4c8d-b9c9-a165af50cc25
+State:     executing
+Task:  <Task 'optimize-571cbcc4-e75d-4c8d-b9c9-a165af50cc25' optimize(..., ...)>
+Exception: 'RuntimeError("<class \'distributed.client.Future\'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/1542698560.py", line 11, in objective\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result\n    self._verify_initialized()\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized\n    raise RuntimeError(\n'
+
+[33m[W 2026-06-10 14:07:26,712][0m Trial 9 failed with parameters: {} because of the following error: RuntimeError("<class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/1542698560.py", line 11, in objective
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result
+    self._verify_initialized()
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized
+    raise RuntimeError(
+RuntimeError: <class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.
+[33m[W 2026-06-10 14:07:26,713][0m Trial 7 failed with parameters: {} because of the following error: RuntimeError("<class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/1542698560.py", line 11, in objective
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result
+    self._verify_initialized()
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized
+    raise RuntimeError(
+RuntimeError: <class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.
+[33m[W 2026-06-10 14:07:26,713][0m Trial 9 failed with value None.[0m
+[33m[W 2026-06-10 14:07:26,716][0m Trial 7 failed with value None.[0m
+2026-06-10 14:07:26,723 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-2fabf7c6-d35d-47af-a085-b79fc19f5b21
+State:     executing
+Task:  <Task 'optimize-2fabf7c6-d35d-47af-a085-b79fc19f5b21' optimize(..., ...)>
+Exception: 'RuntimeError("<class \'distributed.client.Future\'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/1542698560.py", line 11, in objective\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result\n    self._verify_initialized()\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized\n    raise RuntimeError(\n'
+
+[33m[W 2026-06-10 14:07:26,723][0m Trial 10 failed with parameters: {} because of the following error: RuntimeError("<class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/1542698560.py", line 11, in objective
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result
+    self._verify_initialized()
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized
+    raise RuntimeError(
+RuntimeError: <class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.
+[33m[W 2026-06-10 14:07:26,728][0m Trial 10 failed with value None.[0m
+2026-06-10 14:07:26,729 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-e8eff32c-e758-4a05-a2c6-efc5eda66b8e
+State:     executing
+Task:  <Task 'optimize-e8eff32c-e758-4a05-a2c6-efc5eda66b8e' optimize(..., ...)>
+Exception: 'RuntimeError("<class \'distributed.client.Future\'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/1542698560.py", line 11, in objective\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result\n    self._verify_initialized()\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized\n    raise RuntimeError(\n'
+
+2026-06-10 14:07:26,736 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-c8bdf2a9-2ed5-4a4d-8f1f-85ee93535fcc
+State:     executing
+Task:  <Task 'optimize-c8bdf2a9-2ed5-4a4d-8f1f-85ee93535fcc' optimize(..., ...)>
+Exception: 'RuntimeError("<class \'distributed.client.Future\'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/1542698560.py", line 11, in objective\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result\n    self._verify_initialized()\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized\n    raise RuntimeError(\n'
+
+[33m[W 2026-06-10 14:07:26,738][0m Trial 14 failed with parameters: {} because of the following error: RuntimeError("<class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/1542698560.py", line 11, in objective
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result
+    self._verify_initialized()
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized
+    raise RuntimeError(
+RuntimeError: <class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.
+[33m[W 2026-06-10 14:07:26,739][0m Trial 14 failed with value None.[0m
+2026-06-10 14:07:26,744 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-f87973ee-af0b-486c-a04e-d69c80f64fa4
+State:     executing
+Task:  <Task 'optimize-f87973ee-af0b-486c-a04e-d69c80f64fa4' optimize(..., ...)>
+Exception: 'RuntimeError("<class \'distributed.client.Future\'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/1542698560.py", line 11, in objective\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result\n    self._verify_initialized()\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized\n    raise RuntimeError(\n'
+
+2026-06-10 14:19:20,636 - distributed.worker - ERROR - Worker stream died during communication: tcp://11.0.0.108:41759
+Traceback (most recent call last):
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/comm/tcp.py", line 228, in read
+    frames_nosplit = await read_bytes_rw(stream, frames_nosplit_nbytes)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/comm/tcp.py", line 367, in read_bytes_rw
+    actual = await stream.read_into(chunk)  # type: ignore[arg-type]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tornado.iostream.StreamClosedError: Stream is closed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/worker.py", line 2073, in gather_dep
+    response = await get_data_from_worker(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/worker.py", line 2879, in get_data_from_worker
+    response = await send_recv(
+               ^^^^^^^^^^^^^^^^
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/core.py", line 1018, in send_recv
+    response = await comm.read(deserializers=deserializers)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/comm/tcp.py", line 237, in read
+    convert_stream_closed_error(self, e)
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/comm/tcp.py", line 137, in convert_stream_closed_error
+    raise CommClosedError(f"in {obj}: {exc}") from exc
+distributed.comm.core.CommClosedError: in <TCP (closed) Ephemeral Worker->Worker for gather local=tcp://11.0.0.105:37700 remote=tcp://11.0.0.108:41759>: Stream is closed
+/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/protocol/pickle.py:92: ExperimentalWarning: DaskStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  return pickle.loads(x)
+2026-06-10 14:28:39,725 - distributed.worker.memory - WARNING - Unmanaged memory use is high. This may indicate a memory leak or the memory may not be released to the OS; see https://distributed.dask.org/en/latest/worker-memory.html#memory-not-released-back-to-the-os for more information. -- Unmanaged memory: 18.78 GiB -- Worker memory limit: 27.94 GiB
+[33m[W 2026-06-10 14:28:48,335][0m Trial 2 failed with parameters: {} because of the following error: TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial').[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective
+TypeError: cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial
+[33m[W 2026-06-10 14:28:48,337][0m Trial 2 failed with value None.[0m
+2026-06-10 14:28:48,345 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-7f51740e-e6b1-4a7d-a5e6-f8fbb782bbc5
+State:     executing
+Task:  <Task 'optimize-7f51740e-e6b1-4a7d-a5e6-f8fbb782bbc5' optimize(..., ...)>
+Exception: "TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial')"
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective\n'
+
+/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/protocol/pickle.py:92: ExperimentalWarning: DaskStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  return pickle.loads(x)
+[33m[W 2026-06-10 14:28:48,703][0m Trial 0 failed with parameters: {} because of the following error: TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial').[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective
+TypeError: cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial
+[33m[W 2026-06-10 14:28:48,704][0m Trial 3 failed with parameters: {} because of the following error: TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial').[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective
+TypeError: cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial
+[33m[W 2026-06-10 14:28:48,704][0m Trial 1 failed with parameters: {} because of the following error: TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial').[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective
+TypeError: cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial
+[33m[W 2026-06-10 14:28:48,704][0m Trial 0 failed with value None.[0m
+[33m[W 2026-06-10 14:28:48,705][0m Trial 3 failed with value None.[0m
+[33m[W 2026-06-10 14:28:48,706][0m Trial 1 failed with value None.[0m
+2026-06-10 14:28:48,710 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-d5f2fc89-ddec-4785-89c0-2eb358d9a905
+State:     executing
+Task:  <Task 'optimize-d5f2fc89-ddec-4785-89c0-2eb358d9a905' optimize(..., ...)>
+Exception: "TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial')"
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective\n'
+
+2026-06-10 14:28:48,714 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-af3a3c73-7458-4822-ae34-9a95283a4eed
+State:     executing
+Task:  <Task 'optimize-af3a3c73-7458-4822-ae34-9a95283a4eed' optimize(..., ...)>
+Exception: "TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial')"
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective\n'
+
+2026-06-10 14:28:48,719 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-b0d061aa-edba-4588-afec-a9b3591b491e
+State:     executing
+Task:  <Task 'optimize-b0d061aa-edba-4588-afec-a9b3591b491e' optimize(..., ...)>
+Exception: "TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial')"
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective\n'
+
+/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/protocol/pickle.py:92: ExperimentalWarning: DaskStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  return pickle.loads(x)
+2026-06-10 14:28:59,971 - distributed.worker.memory - WARNING - Worker is at 81% memory usage. Pausing worker.  Process memory: 22.65 GiB -- Worker memory limit: 27.94 GiB
+2026-06-10 14:29:00,277 - distributed.worker.memory - WARNING - Worker is at 71% memory usage. Resuming worker. Process memory: 19.96 GiB -- Worker memory limit: 27.94 GiB
+[33m[W 2026-06-10 14:29:08,337][0m Trial 7 failed with parameters: {} because of the following error: TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial').[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective
+TypeError: cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial
+[33m[W 2026-06-10 14:29:08,344][0m Trial 7 failed with value None.[0m
+2026-06-10 14:29:08,349 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-11847f42-6789-4c47-af4a-31f0c1ec84fb
+State:     executing
+Task:  <Task 'optimize-11847f42-6789-4c47-af4a-31f0c1ec84fb' optimize(..., ...)>
+Exception: "TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial')"
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective\n'
+
+/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/protocol/pickle.py:92: ExperimentalWarning: DaskStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  return pickle.loads(x)
+[33m[W 2026-06-10 14:29:08,735][0m Trial 4 failed with parameters: {} because of the following error: TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial').[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective
+TypeError: cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial
+[33m[W 2026-06-10 14:29:08,736][0m Trial 4 failed with value None.[0m
+2026-06-10 14:29:08,739 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-994ca671-6bb7-434e-9f06-563157cbc18d
+State:     executing
+Task:  <Task 'optimize-994ca671-6bb7-434e-9f06-563157cbc18d' optimize(..., ...)>
+Exception: "TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial')"
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective\n'
+
+/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/protocol/pickle.py:92: ExperimentalWarning: DaskStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  return pickle.loads(x)
+[33m[W 2026-06-10 14:29:09,147][0m Trial 6 failed with parameters: {} because of the following error: TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial').[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective
+TypeError: cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial
+[33m[W 2026-06-10 14:29:09,148][0m Trial 6 failed with value None.[0m
+2026-06-10 14:29:09,150 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-59be337f-a488-45e4-b444-19550af8cbbf
+State:     executing
+Task:  <Task 'optimize-59be337f-a488-45e4-b444-19550af8cbbf' optimize(..., ...)>
+Exception: "TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial')"
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective\n'
+
+/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/protocol/pickle.py:92: ExperimentalWarning: DaskStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  return pickle.loads(x)
+[33m[W 2026-06-10 14:29:09,426][0m Trial 5 failed with parameters: {} because of the following error: TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial').[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective
+TypeError: cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial
+[33m[W 2026-06-10 14:29:09,426][0m Trial 5 failed with value None.[0m
+2026-06-10 14:29:09,428 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-6de2f9ee-8607-4f48-94ad-704b8c12c65c
+State:     executing
+Task:  <Task 'optimize-6de2f9ee-8607-4f48-94ad-704b8c12c65c' optimize(..., ...)>
+Exception: "TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial')"
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective\n'
+
+/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/protocol/pickle.py:92: ExperimentalWarning: DaskStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  return pickle.loads(x)
+[33m[W 2026-06-10 14:29:27,926][0m Trial 8 failed with parameters: {} because of the following error: TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial').[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective
+TypeError: cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial
+[33m[W 2026-06-10 14:29:27,926][0m Trial 8 failed with value None.[0m
+2026-06-10 14:29:27,928 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-1c965050-4e4c-4ab3-8fd4-8dacb28b235f
+State:     executing
+Task:  <Task 'optimize-1c965050-4e4c-4ab3-8fd4-8dacb28b235f' optimize(..., ...)>
+Exception: "TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial')"
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective\n'
+
+/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/protocol/pickle.py:92: ExperimentalWarning: DaskStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  return pickle.loads(x)
+[33m[W 2026-06-10 14:29:28,734][0m Trial 9 failed with parameters: {} because of the following error: TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial').[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective
+TypeError: cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial
+[33m[W 2026-06-10 14:29:28,734][0m Trial 9 failed with value None.[0m
+2026-06-10 14:29:28,742 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-3e5ed12a-49ce-40fd-9a3e-cc7b7a77ac73
+State:     executing
+Task:  <Task 'optimize-3e5ed12a-49ce-40fd-9a3e-cc7b7a77ac73' optimize(..., ...)>
+Exception: "TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial')"
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective\n'
+
+/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/protocol/pickle.py:92: ExperimentalWarning: DaskStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  return pickle.loads(x)
+[33m[W 2026-06-10 14:29:29,267][0m Trial 10 failed with parameters: {} because of the following error: TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial').[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective
+TypeError: cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial
+[33m[W 2026-06-10 14:29:29,268][0m Trial 10 failed with value None.[0m
+2026-06-10 14:29:29,270 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-8b1f523b-6bf5-49fe-b987-f7d62c0ba003
+State:     executing
+Task:  <Task 'optimize-8b1f523b-6bf5-49fe-b987-f7d62c0ba003' optimize(..., ...)>
+Exception: "TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial')"
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective\n'
+
+[33m[W 2026-06-10 14:29:29,644][0m Trial 11 failed with parameters: {} because of the following error: TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial').[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective
+TypeError: cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial
+[33m[W 2026-06-10 14:29:29,645][0m Trial 11 failed with value None.[0m
+2026-06-10 14:29:29,646 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-c03e5196-f423-4ef1-8e83-145e897432c8
+State:     executing
+Task:  <Task 'optimize-c03e5196-f423-4ef1-8e83-145e897432c8' optimize(..., ...)>
+Exception: "TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial')"
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective\n'
+
+[33m[W 2026-06-10 14:29:41,596][0m Trial 12 failed with parameters: {} because of the following error: TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial').[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective
+TypeError: cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial
+[33m[W 2026-06-10 14:29:41,599][0m Trial 12 failed with value None.[0m
+2026-06-10 14:29:41,603 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-982649dc-0067-4472-a466-8ce8265ef722
+State:     executing
+Task:  <Task 'optimize-982649dc-0067-4472-a466-8ce8265ef722' optimize(..., ...)>
+Exception: "TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial')"
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective\n'
+
+[33m[W 2026-06-10 14:29:41,948][0m Trial 14 failed with parameters: {} because of the following error: TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial').[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective
+TypeError: cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial
+[33m[W 2026-06-10 14:29:41,948][0m Trial 14 failed with value None.[0m
+2026-06-10 14:29:41,950 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-021d9b69-13a7-4448-aaef-46e891fc9a35
+State:     executing
+Task:  <Task 'optimize-021d9b69-13a7-4448-aaef-46e891fc9a35' optimize(..., ...)>
+Exception: "TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial')"
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective\n'
+
+[33m[W 2026-06-10 14:29:42,182][0m Trial 13 failed with parameters: {} because of the following error: TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial').[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective
+TypeError: cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial
+[33m[W 2026-06-10 14:29:42,183][0m Trial 13 failed with value None.[0m
+2026-06-10 14:29:42,184 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-1846d63d-0e44-4db2-bebe-d79dab94a683
+State:     executing
+Task:  <Task 'optimize-1846d63d-0e44-4db2-bebe-d79dab94a683' optimize(..., ...)>
+Exception: "TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial')"
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective\n'
+
+/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/protocol/pickle.py:92: ExperimentalWarning: DaskStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  return pickle.loads(x)
+[33m[W 2026-06-10 14:30:34,502][0m Trial 0 failed with parameters: {} because of the following error: TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial').[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective
+TypeError: cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial
+[33m[W 2026-06-10 14:30:34,506][0m Trial 0 failed with value None.[0m
+2026-06-10 14:30:34,517 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-e05f117e-7e45-4e11-801f-6edf5e5e26d8
+State:     executing
+Task:  <Task 'optimize-e05f117e-7e45-4e11-801f-6edf5e5e26d8' optimize(..., ...)>
+Exception: "TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial')"
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective\n'
+
+/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/protocol/pickle.py:92: ExperimentalWarning: DaskStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  return pickle.loads(x)
+[33m[W 2026-06-10 14:30:35,259][0m Trial 3 failed with parameters: {} because of the following error: TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial').[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective
+TypeError: cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial
+[33m[W 2026-06-10 14:30:35,260][0m Trial 3 failed with value None.[0m
+2026-06-10 14:30:35,261 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-69a19cd8-a174-4325-a2ff-b1f3fe56661c
+State:     executing
+Task:  <Task 'optimize-69a19cd8-a174-4325-a2ff-b1f3fe56661c' optimize(..., ...)>
+Exception: "TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial')"
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective\n'
+
+/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/protocol/pickle.py:92: ExperimentalWarning: DaskStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  return pickle.loads(x)
+[33m[W 2026-06-10 14:30:35,967][0m Trial 2 failed with parameters: {} because of the following error: TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial').[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective
+TypeError: cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial
+[33m[W 2026-06-10 14:30:35,968][0m Trial 2 failed with value None.[0m
+2026-06-10 14:30:35,972 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-ed5670ff-8a1c-48e9-b148-76d49f878cba
+State:     executing
+Task:  <Task 'optimize-ed5670ff-8a1c-48e9-b148-76d49f878cba' optimize(..., ...)>
+Exception: "TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial')"
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective\n'
+
+/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/protocol/pickle.py:92: ExperimentalWarning: DaskStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  return pickle.loads(x)
+[33m[W 2026-06-10 14:30:36,315][0m Trial 1 failed with parameters: {} because of the following error: TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial').[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective
+TypeError: cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial
+[33m[W 2026-06-10 14:30:36,316][0m Trial 1 failed with value None.[0m
+2026-06-10 14:30:36,317 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-671604fa-0832-4a3f-9bb9-1d085f431b38
+State:     executing
+Task:  <Task 'optimize-671604fa-0832-4a3f-9bb9-1d085f431b38' optimize(..., ...)>
+Exception: "TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial')"
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective\n'
+
+/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/protocol/pickle.py:92: ExperimentalWarning: DaskStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  return pickle.loads(x)
+[33m[W 2026-06-10 14:30:53,745][0m Trial 4 failed with parameters: {} because of the following error: TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial').[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective
+TypeError: cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial
+[33m[W 2026-06-10 14:30:53,746][0m Trial 4 failed with value None.[0m
+2026-06-10 14:30:53,748 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-f31bff8f-5e66-4ff2-9cde-3d5430a95dcd
+State:     executing
+Task:  <Task 'optimize-f31bff8f-5e66-4ff2-9cde-3d5430a95dcd' optimize(..., ...)>
+Exception: "TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial')"
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective\n'
+
+/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/protocol/pickle.py:92: ExperimentalWarning: DaskStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  return pickle.loads(x)
+[33m[W 2026-06-10 14:30:54,518][0m Trial 6 failed with parameters: {} because of the following error: TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial').[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective
+TypeError: cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial
+[33m[W 2026-06-10 14:30:54,525][0m Trial 6 failed with value None.[0m
+2026-06-10 14:30:54,527 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-4e77a6bf-c20f-49a3-b64c-5290b71af48a
+State:     executing
+Task:  <Task 'optimize-4e77a6bf-c20f-49a3-b64c-5290b71af48a' optimize(..., ...)>
+Exception: "TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial')"
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective\n'
+
+/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/protocol/pickle.py:92: ExperimentalWarning: DaskStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  return pickle.loads(x)
+[33m[W 2026-06-10 14:30:55,072][0m Trial 5 failed with parameters: {} because of the following error: TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial').[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective
+TypeError: cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial
+[33m[W 2026-06-10 14:30:55,073][0m Trial 5 failed with value None.[0m
+2026-06-10 14:30:55,074 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-633cefa3-643d-4116-bb3b-f057f37b822c
+State:     executing
+Task:  <Task 'optimize-633cefa3-643d-4116-bb3b-f057f37b822c' optimize(..., ...)>
+Exception: "TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial')"
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective\n'
+
+/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/protocol/pickle.py:92: ExperimentalWarning: DaskStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  return pickle.loads(x)
+[33m[W 2026-06-10 14:30:55,461][0m Trial 7 failed with parameters: {} because of the following error: TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial').[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective
+TypeError: cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial
+[33m[W 2026-06-10 14:30:55,462][0m Trial 7 failed with value None.[0m
+2026-06-10 14:30:55,463 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-2830683e-e748-45b5-a5b9-d14d38ac9e9c
+State:     executing
+Task:  <Task 'optimize-2830683e-e748-45b5-a5b9-d14d38ac9e9c' optimize(..., ...)>
+Exception: "TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial')"
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective\n'
+
+/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/protocol/pickle.py:92: ExperimentalWarning: DaskStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  return pickle.loads(x)
+[33m[W 2026-06-10 14:31:13,516][0m Trial 10 failed with parameters: {} because of the following error: TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial').[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective
+TypeError: cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial
+[33m[W 2026-06-10 14:31:13,517][0m Trial 10 failed with value None.[0m
+2026-06-10 14:31:13,530 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-81b24a48-291c-4575-be3c-d4c49eb57faf
+State:     executing
+Task:  <Task 'optimize-81b24a48-291c-4575-be3c-d4c49eb57faf' optimize(..., ...)>
+Exception: "TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial')"
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective\n'
+
+/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/protocol/pickle.py:92: ExperimentalWarning: DaskStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  return pickle.loads(x)
+[33m[W 2026-06-10 14:31:14,040][0m Trial 8 failed with parameters: {} because of the following error: TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial').[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective
+TypeError: cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial
+[33m[W 2026-06-10 14:31:14,041][0m Trial 8 failed with value None.[0m
+2026-06-10 14:31:14,043 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-b1ab3cf8-878e-461e-bee9-4ec307b335ad
+State:     executing
+Task:  <Task 'optimize-b1ab3cf8-878e-461e-bee9-4ec307b335ad' optimize(..., ...)>
+Exception: "TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial')"
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective\n'
+
+/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/protocol/pickle.py:92: ExperimentalWarning: DaskStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  return pickle.loads(x)
+[33m[W 2026-06-10 14:31:14,590][0m Trial 9 failed with parameters: {} because of the following error: TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial').[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective
+TypeError: cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial
+[33m[W 2026-06-10 14:31:14,591][0m Trial 9 failed with value None.[0m
+2026-06-10 14:31:14,592 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-84cd84bf-0d1c-4277-ad07-7ea7af3e774c
+State:     executing
+Task:  <Task 'optimize-84cd84bf-0d1c-4277-ad07-7ea7af3e774c' optimize(..., ...)>
+Exception: "TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial')"
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective\n'
+
+[33m[W 2026-06-10 14:31:15,022][0m Trial 11 failed with parameters: {} because of the following error: TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial').[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective
+TypeError: cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial
+[33m[W 2026-06-10 14:31:15,022][0m Trial 11 failed with value None.[0m
+2026-06-10 14:31:15,024 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-6c96697e-7be2-483d-9145-bf569593cf41
+State:     executing
+Task:  <Task 'optimize-6c96697e-7be2-483d-9145-bf569593cf41' optimize(..., ...)>
+Exception: "TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial')"
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective\n'
+
+[33m[W 2026-06-10 14:31:28,450][0m Trial 13 failed with parameters: {} because of the following error: TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial').[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective
+TypeError: cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial
+[33m[W 2026-06-10 14:31:28,450][0m Trial 13 failed with value None.[0m
+2026-06-10 14:31:28,452 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-0af6da19-43ee-4a2f-8e4c-cf026319cb1f
+State:     executing
+Task:  <Task 'optimize-0af6da19-43ee-4a2f-8e4c-cf026319cb1f' optimize(..., ...)>
+Exception: "TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial')"
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective\n'
+
+[33m[W 2026-06-10 14:31:28,811][0m Trial 12 failed with parameters: {} because of the following error: TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial').[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective
+TypeError: cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial
+[33m[W 2026-06-10 14:31:28,812][0m Trial 12 failed with value None.[0m
+2026-06-10 14:31:28,814 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-60157036-08f0-4427-9978-22f246522121
+State:     executing
+Task:  <Task 'optimize-60157036-08f0-4427-9978-22f246522121' optimize(..., ...)>
+Exception: "TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial')"
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective\n'
+
+[33m[W 2026-06-10 14:31:29,065][0m Trial 14 failed with parameters: {} because of the following error: TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial').[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective
+TypeError: cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial
+[33m[W 2026-06-10 14:31:29,065][0m Trial 14 failed with value None.[0m
+2026-06-10 14:31:29,067 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-99821577-a653-48bd-821d-e95c90b8ce58
+State:     executing
+Task:  <Task 'optimize-99821577-a653-48bd-821d-e95c90b8ce58' optimize(..., ...)>
+Exception: "TypeError('cuml.ensemble.randomforestclassifier.RandomForestClassifier() argument after ** must be a mapping, not Trial')"
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/2876069991.py", line 83, in remote_objective\n'
+
+/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/protocol/pickle.py:92: ExperimentalWarning: DaskStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  return pickle.loads(x)
+2026-06-10 14:34:57,416 - distributed.nanny - INFO - Nanny asking worker to close. Reason: client-restart-1781123697.4094794
+2026-06-10 14:35:01,417 - distributed.nanny - WARNING - Worker process still alive after 4.0 seconds, killing
+2026-06-10 14:35:02,320 - distributed.nanny - INFO - Worker process 330946 was killed by signal 9
+2026-06-10 14:35:02,340 - distributed.nanny - WARNING - Restarting worker
+2026-06-10 14:35:11,525 - distributed.preloading - INFO - Creating preload: dask_cuda.initialize
+2026-06-10 14:35:11,525 - distributed.preloading - INFO - Import preload module: dask_cuda.initialize
+2026-06-10 14:35:14,411 - distributed.preloading - INFO - Run preload setup: dask_cuda.initialize
+2026-06-10 14:35:14,429 - distributed.worker - INFO -       Start worker at:     tcp://11.0.0.105:33501
+2026-06-10 14:35:14,429 - distributed.worker - INFO -          Listening to:     tcp://11.0.0.105:33501
+2026-06-10 14:35:14,429 - distributed.worker - INFO -           Worker name:             SLURMCluster-1
+2026-06-10 14:35:14,429 - distributed.worker - INFO -          dashboard at:           11.0.0.105:33027
+2026-06-10 14:35:14,430 - distributed.worker - INFO - Waiting to connect to:      tcp://11.0.0.136:8786
+2026-06-10 14:35:14,430 - distributed.worker - INFO - -------------------------------------------------
+2026-06-10 14:35:14,430 - distributed.worker - INFO -               Threads:                          4
+2026-06-10 14:35:14,430 - distributed.worker - INFO -                Memory:                  27.94 GiB
+2026-06-10 14:35:14,430 - distributed.worker - INFO -       Local Directory: /tmp/dask-scratch-space/worker-zhjplil5
+2026-06-10 14:35:14,430 - distributed.worker - INFO - Starting Worker plugin RMMSetup-1cd88068-cc16-427d-a984-600ec6543f43
+2026-06-10 14:35:14,430 - distributed.worker - INFO - Starting Worker plugin CPUAffinity-5fdc948f-97d1-4784-8283-a882f8de87aa
+2026-06-10 14:35:14,431 - distributed.worker - INFO - Starting Worker plugin PreImport-c87c3263-d543-4a12-9a07-803b653aa3c9
+2026-06-10 14:35:14,431 - distributed.worker - INFO - Starting Worker plugin CUDFSetup-bb0d9eef-616f-441f-83b8-e705072ba531
+slurmstepd: error: *** JOB 563905 ON nukwa-00.cnca CANCELLED AT 2026-06-10T14:35:17 ***

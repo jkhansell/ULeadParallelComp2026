@@ -1,0 +1,54 @@
+Run 'mamba init' to be able to run mamba activate/deactivate
+and start a new shell session. Or use conda to activate/deactivate.
+
+2026-06-10 14:35:29,501 - distributed.nanny - INFO -         Start Nanny at: 'tcp://11.0.0.105:44171'
+2026-06-10 14:35:31,430 - distributed.diskutils - INFO - Found stale lock file and directory '/tmp/dask-scratch-space/worker-zhjplil5', purging
+2026-06-10 14:35:31,449 - distributed.preloading - INFO - Creating preload: dask_cuda.initialize
+2026-06-10 14:35:31,449 - distributed.preloading - INFO - Import preload module: dask_cuda.initialize
+2026-06-10 14:35:31,974 - distributed.preloading - INFO - Run preload setup: dask_cuda.initialize
+2026-06-10 14:35:31,975 - distributed.worker - INFO -       Start worker at:     tcp://11.0.0.105:37799
+2026-06-10 14:35:31,975 - distributed.worker - INFO -          Listening to:     tcp://11.0.0.105:37799
+2026-06-10 14:35:31,975 - distributed.worker - INFO -           Worker name:             SLURMCluster-1
+2026-06-10 14:35:31,975 - distributed.worker - INFO -          dashboard at:           11.0.0.105:33103
+2026-06-10 14:35:31,975 - distributed.worker - INFO - Waiting to connect to:      tcp://11.0.0.136:8786
+2026-06-10 14:35:31,975 - distributed.worker - INFO - -------------------------------------------------
+2026-06-10 14:35:31,975 - distributed.worker - INFO -               Threads:                          4
+2026-06-10 14:35:31,975 - distributed.worker - INFO -                Memory:                  27.94 GiB
+2026-06-10 14:35:31,975 - distributed.worker - INFO -       Local Directory: /tmp/dask-scratch-space/worker-uv3s6hh0
+2026-06-10 14:35:31,976 - distributed.worker - INFO - Starting Worker plugin PreImport-8182a52d-be4f-4927-883e-d173442d4bb5
+2026-06-10 14:35:31,976 - distributed.worker - INFO - Starting Worker plugin CUDFSetup-61a93a22-556a-4dec-9501-a05be261a43b
+2026-06-10 14:35:34,045 - distributed.worker - INFO - Starting Worker plugin RMMSetup-c121a510-cd5e-4eed-947a-95b27d844b9d
+2026-06-10 14:35:34,046 - distributed.worker - INFO - Starting Worker plugin CPUAffinity-26eccf4f-87fa-4357-9dfb-3a0bb4c1e669
+2026-06-10 14:35:34,051 - distributed.worker - INFO - -------------------------------------------------
+2026-06-10 14:35:34,325 - distributed.worker - INFO - Starting Worker plugin shuffle
+2026-06-10 14:35:34,326 - distributed.worker - INFO -         Registered to:      tcp://11.0.0.136:8786
+2026-06-10 14:35:34,326 - distributed.worker - INFO - -------------------------------------------------
+2026-06-10 14:35:34,329 - distributed.core - INFO - Starting established connection to tcp://11.0.0.136:8786
+2026-06-10 14:35:41,636 - distributed.worker - INFO - Stopping worker at tcp://11.0.0.105:37799. Reason: scheduler-close
+2026-06-10 14:35:41,638 - distributed.batched - INFO - Batched Comm Closed <TCP (closed) Worker->Scheduler local=tcp://11.0.0.105:50544 remote=tcp://11.0.0.136:8786>
+Traceback (most recent call last):
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/comm/tcp.py", line 298, in write
+    raise StreamClosedError()
+tornado.iostream.StreamClosedError: Stream is closed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/batched.py", line 115, in _background_send
+    nbytes = yield coro
+             ^^^^^^^^^^
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/tornado/gen.py", line 769, in run
+    value = future.result()
+            ^^^^^^^^^^^^^^^
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/comm/tcp.py", line 308, in write
+    convert_stream_closed_error(self, e)
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/comm/tcp.py", line 137, in convert_stream_closed_error
+    raise CommClosedError(f"in {obj}: {exc}") from exc
+distributed.comm.core.CommClosedError: in <TCP (closed) Worker->Scheduler local=tcp://11.0.0.105:50544 remote=tcp://11.0.0.136:8786>: Stream is closed
+slurmstepd: error: *** JOB 563925 ON nukwa-00.cnca CANCELLED AT 2026-06-10T14:35:41 ***
+2026-06-10 14:35:41,724 - distributed.nanny - INFO - Closing Nanny gracefully at 'tcp://11.0.0.105:44171'. Reason: scheduler-close
+2026-06-10 14:35:41,777 - distributed.worker - INFO - Removing Worker plugin PreImport-8182a52d-be4f-4927-883e-d173442d4bb5
+2026-06-10 14:35:41,777 - distributed.worker - INFO - Removing Worker plugin CUDFSetup-61a93a22-556a-4dec-9501-a05be261a43b
+2026-06-10 14:35:41,777 - distributed.worker - INFO - Removing Worker plugin RMMSetup-c121a510-cd5e-4eed-947a-95b27d844b9d
+2026-06-10 14:35:41,777 - distributed.worker - INFO - Removing Worker plugin CPUAffinity-26eccf4f-87fa-4357-9dfb-3a0bb4c1e669
+2026-06-10 14:35:41,777 - distributed.worker - INFO - Removing Worker plugin shuffle

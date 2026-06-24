@@ -1,0 +1,29 @@
+Run 'mamba init' to be able to run mamba activate/deactivate
+and start a new shell session. Or use conda to activate/deactivate.
+
+2026-06-10 14:57:00,866 - distributed.nanny - INFO -         Start Nanny at: 'tcp://11.0.0.107:44737'
+2026-06-10 14:57:03,257 - distributed.preloading - INFO - Creating preload: dask_cuda.initialize
+2026-06-10 14:57:03,257 - distributed.preloading - INFO - Import preload module: dask_cuda.initialize
+2026-06-10 14:57:05,590 - distributed.preloading - INFO - Run preload setup: dask_cuda.initialize
+2026-06-10 14:57:05,591 - distributed.worker - INFO -       Start worker at:     tcp://11.0.0.107:40789
+2026-06-10 14:57:05,591 - distributed.worker - INFO -          Listening to:     tcp://11.0.0.107:40789
+2026-06-10 14:57:05,591 - distributed.worker - INFO -           Worker name:             SLURMCluster-1
+2026-06-10 14:57:05,591 - distributed.worker - INFO -          dashboard at:           11.0.0.107:32969
+2026-06-10 14:57:05,591 - distributed.worker - INFO - Waiting to connect to:      tcp://11.0.0.136:8786
+2026-06-10 14:57:05,591 - distributed.worker - INFO - -------------------------------------------------
+2026-06-10 14:57:05,591 - distributed.worker - INFO -               Threads:                          4
+2026-06-10 14:57:05,591 - distributed.worker - INFO -                Memory:                  27.94 GiB
+2026-06-10 14:57:05,591 - distributed.worker - INFO -       Local Directory: /tmp/dask-scratch-space/worker-_j6_p4j6
+2026-06-10 14:57:05,591 - distributed.worker - INFO - Starting Worker plugin CUDFSetup-ebd4c35b-4c68-44ae-b36e-af0f8affbf8c
+2026-06-10 14:57:09,221 - distributed.worker - INFO - Starting Worker plugin PreImport-ff7ef35a-faeb-4efa-90b9-6aa2bde77196
+2026-06-10 14:57:09,221 - distributed.worker - INFO - Starting Worker plugin CPUAffinity-abbec83d-aa13-46d1-b5fa-69a65ff187ab
+2026-06-10 14:57:09,221 - distributed.worker - INFO - Starting Worker plugin RMMSetup-82f20cb2-74a1-4709-9f4d-20c852294680
+2026-06-10 14:57:09,222 - distributed.worker - INFO - -------------------------------------------------
+2026-06-10 14:57:09,321 - distributed.worker - INFO - Starting Worker plugin shuffle
+2026-06-10 14:57:09,322 - distributed.worker - INFO -         Registered to:      tcp://11.0.0.136:8786
+2026-06-10 14:57:09,322 - distributed.worker - INFO - -------------------------------------------------
+2026-06-10 14:57:09,323 - distributed.core - INFO - Starting established connection to tcp://11.0.0.136:8786
+/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/protocol/pickle.py:92: ExperimentalWarning: DaskStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  return pickle.loads(x)
+2026-06-10 15:00:12,855 - distributed.core - INFO - Event loop was unresponsive in Worker for 143.00s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+slurmstepd: error: *** JOB 563951 ON nukwa-02.cnca CANCELLED AT 2026-06-10T15:01:56 ***

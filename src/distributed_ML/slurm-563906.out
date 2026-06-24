@@ -1,0 +1,645 @@
+Run 'mamba init' to be able to run mamba activate/deactivate
+and start a new shell session. Or use conda to activate/deactivate.
+
+2026-06-10 13:59:21,193 - distributed.nanny - INFO -         Start Nanny at: 'tcp://11.0.0.108:41907'
+2026-06-10 13:59:23,102 - distributed.preloading - INFO - Creating preload: dask_cuda.initialize
+2026-06-10 13:59:23,102 - distributed.preloading - INFO - Import preload module: dask_cuda.initialize
+2026-06-10 13:59:23,660 - distributed.preloading - INFO - Run preload setup: dask_cuda.initialize
+2026-06-10 13:59:23,660 - distributed.worker - INFO -       Start worker at:     tcp://11.0.0.108:41759
+2026-06-10 13:59:23,660 - distributed.worker - INFO -          Listening to:     tcp://11.0.0.108:41759
+2026-06-10 13:59:23,660 - distributed.worker - INFO -           Worker name:             SLURMCluster-0
+2026-06-10 13:59:23,660 - distributed.worker - INFO -          dashboard at:           11.0.0.108:36539
+2026-06-10 13:59:23,660 - distributed.worker - INFO - Waiting to connect to:      tcp://11.0.0.136:8786
+2026-06-10 13:59:23,660 - distributed.worker - INFO - -------------------------------------------------
+2026-06-10 13:59:23,660 - distributed.worker - INFO -               Threads:                          4
+2026-06-10 13:59:23,660 - distributed.worker - INFO -                Memory:                  27.94 GiB
+2026-06-10 13:59:23,660 - distributed.worker - INFO -       Local Directory: /tmp/dask-scratch-space/worker-clr8178s
+2026-06-10 13:59:23,661 - distributed.worker - INFO - Starting Worker plugin PreImport-ff8bc127-8ac4-4ed6-b512-fab6a4d07ff7
+2026-06-10 13:59:23,661 - distributed.worker - INFO - Starting Worker plugin CUDFSetup-e659d88b-cf87-4037-af29-8d5aa0e5f6fd
+2026-06-10 13:59:24,128 - distributed.worker - INFO - Starting Worker plugin RMMSetup-a3953fdf-8bc2-443b-bb14-a89b797a71d6
+2026-06-10 13:59:24,128 - distributed.worker - INFO - Starting Worker plugin CPUAffinity-fe076260-2d5c-4d6f-bb6a-c13fb793418a
+2026-06-10 13:59:24,128 - distributed.worker - INFO - -------------------------------------------------
+2026-06-10 13:59:24,183 - distributed.worker - INFO - Starting Worker plugin shuffle
+2026-06-10 13:59:24,183 - distributed.worker - INFO -         Registered to:      tcp://11.0.0.136:8786
+2026-06-10 13:59:24,183 - distributed.worker - INFO - -------------------------------------------------
+2026-06-10 13:59:24,183 - distributed.core - INFO - Starting established connection to tcp://11.0.0.136:8786
+2026-06-10 13:59:25,848 - distributed.worker - INFO - Run out-of-band function 'gpu_test'
+/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/protocol/pickle.py:92: ExperimentalWarning: DaskStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  return pickle.loads(x)
+[33m[W 2026-06-10 14:06:06,230][0m Trial 0 failed with parameters: {} because of the following error: NameError("name 'objective' is not defined").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>
+NameError: name 'objective' is not defined. Did you mean: 'object'?
+[33m[W 2026-06-10 14:06:06,232][0m Trial 1 failed with parameters: {} because of the following error: NameError("name 'objective' is not defined").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>
+NameError: name 'objective' is not defined. Did you mean: 'object'?
+[33m[W 2026-06-10 14:06:06,234][0m Trial 1 failed with value None.[0m
+[33m[W 2026-06-10 14:06:06,233][0m Trial 0 failed with value None.[0m
+2026-06-10 14:06:06,239 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-9f97d8ce-e4dc-40af-8d16-03d027ee1439
+State:     executing
+Task:  <Task 'optimize-9f97d8ce-e4dc-40af-8d16-03d027ee1439' optimize(..., ...)>
+Exception: 'NameError("name \'objective\' is not defined")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>\n'
+
+2026-06-10 14:06:06,239 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-d753b589-ab6d-480a-8c92-6785551ae810
+State:     executing
+Task:  <Task 'optimize-d753b589-ab6d-480a-8c92-6785551ae810' optimize(..., ...)>
+Exception: 'NameError("name \'objective\' is not defined")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>\n'
+
+[33m[W 2026-06-10 14:06:06,239][0m Trial 2 failed with parameters: {} because of the following error: NameError("name 'objective' is not defined").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>
+NameError: name 'objective' is not defined. Did you mean: 'object'?
+[33m[W 2026-06-10 14:06:06,241][0m Trial 2 failed with value None.[0m
+2026-06-10 14:06:06,243 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-548a226b-7f10-4331-8cbf-de54595c20fa
+State:     executing
+Task:  <Task 'optimize-548a226b-7f10-4331-8cbf-de54595c20fa' optimize(..., ...)>
+Exception: 'NameError("name \'objective\' is not defined")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>\n'
+
+[33m[W 2026-06-10 14:06:06,247][0m Trial 3 failed with parameters: {} because of the following error: NameError("name 'objective' is not defined").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>
+NameError: name 'objective' is not defined. Did you mean: 'object'?
+[33m[W 2026-06-10 14:06:06,248][0m Trial 3 failed with value None.[0m
+2026-06-10 14:06:06,250 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-e5be2cba-76cd-4fb1-9b0e-1925c5c76663
+State:     executing
+Task:  <Task 'optimize-e5be2cba-76cd-4fb1-9b0e-1925c5c76663' optimize(..., ...)>
+Exception: 'NameError("name \'objective\' is not defined")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>\n'
+
+[33m[W 2026-06-10 14:06:06,255][0m Trial 8 failed with parameters: {} because of the following error: NameError("name 'objective' is not defined").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>
+NameError: name 'objective' is not defined. Did you mean: 'object'?
+[33m[W 2026-06-10 14:06:06,256][0m Trial 8 failed with value None.[0m
+[33m[W 2026-06-10 14:06:06,255][0m Trial 7 failed with parameters: {} because of the following error: NameError("name 'objective' is not defined").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>
+NameError: name 'objective' is not defined. Did you mean: 'object'?
+[33m[W 2026-06-10 14:06:06,259][0m Trial 9 failed with parameters: {} because of the following error: NameError("name 'objective' is not defined").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>
+NameError: name 'objective' is not defined. Did you mean: 'object'?
+2026-06-10 14:06:06,260 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-5366fb5d-d272-4161-95c2-fd6f9b1c47de
+State:     executing
+Task:  <Task 'optimize-5366fb5d-d272-4161-95c2-fd6f9b1c47de' optimize(..., ...)>
+Exception: 'NameError("name \'objective\' is not defined")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>\n'
+
+[33m[W 2026-06-10 14:06:06,259][0m Trial 7 failed with value None.[0m
+[33m[W 2026-06-10 14:06:06,260][0m Trial 9 failed with value None.[0m
+2026-06-10 14:06:06,263 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-4201c958-5396-4332-b138-117ec1b3b1fc
+State:     executing
+Task:  <Task 'optimize-4201c958-5396-4332-b138-117ec1b3b1fc' optimize(..., ...)>
+Exception: 'NameError("name \'objective\' is not defined")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>\n'
+
+2026-06-10 14:06:06,263 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-b1a11a66-3093-4a9d-85cf-5e572cf9326d
+State:     executing
+Task:  <Task 'optimize-b1a11a66-3093-4a9d-85cf-5e572cf9326d' optimize(..., ...)>
+Exception: 'NameError("name \'objective\' is not defined")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>\n'
+
+2026-06-10 14:06:20,519 - distributed.worker - INFO - Run out-of-band function 'gpu_test'
+[33m[W 2026-06-10 14:06:27,414][0m Trial 0 failed with parameters: {} because of the following error: RuntimeError("<class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>
+  File "/tmp/ipykernel_1473657/172870663.py", line 11, in objective
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result
+    self._verify_initialized()
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized
+    raise RuntimeError(
+RuntimeError: <class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.
+[33m[W 2026-06-10 14:06:27,415][0m Trial 3 failed with parameters: {} because of the following error: RuntimeError("<class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>
+  File "/tmp/ipykernel_1473657/172870663.py", line 11, in objective
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result
+    self._verify_initialized()
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized
+    raise RuntimeError(
+RuntimeError: <class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.
+[33m[W 2026-06-10 14:06:27,415][0m Trial 6 failed with parameters: {} because of the following error: RuntimeError("<class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>
+  File "/tmp/ipykernel_1473657/172870663.py", line 11, in objective
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result
+    self._verify_initialized()
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized
+    raise RuntimeError(
+RuntimeError: <class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.
+[33m[W 2026-06-10 14:06:27,415][0m Trial 2 failed with parameters: {} because of the following error: RuntimeError("<class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>
+  File "/tmp/ipykernel_1473657/172870663.py", line 11, in objective
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result
+    self._verify_initialized()
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized
+    raise RuntimeError(
+RuntimeError: <class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.
+[33m[W 2026-06-10 14:06:27,415][0m Trial 0 failed with value None.[0m
+[33m[W 2026-06-10 14:06:27,416][0m Trial 3 failed with value None.[0m
+[33m[W 2026-06-10 14:06:27,416][0m Trial 6 failed with value None.[0m
+[33m[W 2026-06-10 14:06:27,416][0m Trial 2 failed with value None.[0m
+2026-06-10 14:06:27,422 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-4a8919e0-fd53-4f38-9644-6ca6dbc6f915
+State:     executing
+Task:  <Task 'optimize-4a8919e0-fd53-4f38-9644-6ca6dbc6f915' optimize(..., ...)>
+Exception: 'RuntimeError("<class \'distributed.client.Future\'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>\n  File "/tmp/ipykernel_1473657/172870663.py", line 11, in objective\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result\n    self._verify_initialized()\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized\n    raise RuntimeError(\n'
+
+2026-06-10 14:06:27,422 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-f4bce73f-d94f-4886-a5f2-ede1137b16fd
+State:     executing
+Task:  <Task 'optimize-f4bce73f-d94f-4886-a5f2-ede1137b16fd' optimize(..., ...)>
+Exception: 'RuntimeError("<class \'distributed.client.Future\'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>\n  File "/tmp/ipykernel_1473657/172870663.py", line 11, in objective\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result\n    self._verify_initialized()\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized\n    raise RuntimeError(\n'
+
+2026-06-10 14:06:27,422 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-f3f92778-0cad-481f-9ff7-6393caf51d3a
+State:     executing
+Task:  <Task 'optimize-f3f92778-0cad-481f-9ff7-6393caf51d3a' optimize(..., ...)>
+Exception: 'RuntimeError("<class \'distributed.client.Future\'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>\n  File "/tmp/ipykernel_1473657/172870663.py", line 11, in objective\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result\n    self._verify_initialized()\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized\n    raise RuntimeError(\n'
+
+2026-06-10 14:06:27,422 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-28ac6820-d45f-40b1-8337-877079791e11
+State:     executing
+Task:  <Task 'optimize-28ac6820-d45f-40b1-8337-877079791e11' optimize(..., ...)>
+Exception: 'RuntimeError("<class \'distributed.client.Future\'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>\n  File "/tmp/ipykernel_1473657/172870663.py", line 11, in objective\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result\n    self._verify_initialized()\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized\n    raise RuntimeError(\n'
+
+[33m[W 2026-06-10 14:06:27,472][0m Trial 8 failed with parameters: {} because of the following error: RuntimeError("<class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>
+  File "/tmp/ipykernel_1473657/172870663.py", line 11, in objective
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result
+    self._verify_initialized()
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized
+    raise RuntimeError(
+RuntimeError: <class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.
+[33m[W 2026-06-10 14:06:27,473][0m Trial 8 failed with value None.[0m
+2026-06-10 14:06:27,474 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-04668614-1424-454d-b3d7-006141156a16
+State:     executing
+Task:  <Task 'optimize-04668614-1424-454d-b3d7-006141156a16' optimize(..., ...)>
+Exception: 'RuntimeError("<class \'distributed.client.Future\'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>\n  File "/tmp/ipykernel_1473657/172870663.py", line 11, in objective\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result\n    self._verify_initialized()\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized\n    raise RuntimeError(\n'
+
+[33m[W 2026-06-10 14:06:27,670][0m Trial 11 failed with parameters: {} because of the following error: RuntimeError("<class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>
+  File "/tmp/ipykernel_1473657/172870663.py", line 11, in objective
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result
+    self._verify_initialized()
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized
+    raise RuntimeError(
+RuntimeError: <class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.
+[33m[W 2026-06-10 14:06:27,670][0m Trial 11 failed with value None.[0m
+2026-06-10 14:06:27,671 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-693610e5-fad7-4170-b8b9-b9d294451209
+State:     executing
+Task:  <Task 'optimize-693610e5-fad7-4170-b8b9-b9d294451209' optimize(..., ...)>
+Exception: 'RuntimeError("<class \'distributed.client.Future\'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>\n  File "/tmp/ipykernel_1473657/172870663.py", line 11, in objective\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result\n    self._verify_initialized()\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized\n    raise RuntimeError(\n'
+
+[33m[W 2026-06-10 14:06:27,672][0m Trial 9 failed with parameters: {} because of the following error: RuntimeError("<class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>
+  File "/tmp/ipykernel_1473657/172870663.py", line 11, in objective
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result
+    self._verify_initialized()
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized
+    raise RuntimeError(
+RuntimeError: <class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.
+[33m[W 2026-06-10 14:06:27,673][0m Trial 9 failed with value None.[0m
+2026-06-10 14:06:27,677 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-56376f28-e135-444c-8552-cefed40b82ea
+State:     executing
+Task:  <Task 'optimize-56376f28-e135-444c-8552-cefed40b82ea' optimize(..., ...)>
+Exception: 'RuntimeError("<class \'distributed.client.Future\'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>\n  File "/tmp/ipykernel_1473657/172870663.py", line 11, in objective\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result\n    self._verify_initialized()\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized\n    raise RuntimeError(\n'
+
+[33m[W 2026-06-10 14:06:27,679][0m Trial 10 failed with parameters: {} because of the following error: RuntimeError("<class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>
+  File "/tmp/ipykernel_1473657/172870663.py", line 11, in objective
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result
+    self._verify_initialized()
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized
+    raise RuntimeError(
+RuntimeError: <class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.
+[33m[W 2026-06-10 14:06:27,679][0m Trial 12 failed with parameters: {} because of the following error: RuntimeError("<class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>
+  File "/tmp/ipykernel_1473657/172870663.py", line 11, in objective
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result
+    self._verify_initialized()
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized
+    raise RuntimeError(
+RuntimeError: <class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.
+[33m[W 2026-06-10 14:06:27,679][0m Trial 10 failed with value None.[0m
+[33m[W 2026-06-10 14:06:27,680][0m Trial 12 failed with value None.[0m
+2026-06-10 14:06:27,683 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-a2c0dd2b-e327-486d-b8a9-b171e31dcc02
+State:     executing
+Task:  <Task 'optimize-a2c0dd2b-e327-486d-b8a9-b171e31dcc02' optimize(..., ...)>
+Exception: 'RuntimeError("<class \'distributed.client.Future\'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>\n  File "/tmp/ipykernel_1473657/172870663.py", line 11, in objective\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result\n    self._verify_initialized()\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized\n    raise RuntimeError(\n'
+
+2026-06-10 14:06:27,684 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-588c3e6e-3ff4-416c-b4cf-0a9de5dcbd6d
+State:     executing
+Task:  <Task 'optimize-588c3e6e-3ff4-416c-b4cf-0a9de5dcbd6d' optimize(..., ...)>
+Exception: 'RuntimeError("<class \'distributed.client.Future\'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>\n  File "/tmp/ipykernel_1473657/172870663.py", line 11, in objective\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result\n    self._verify_initialized()\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized\n    raise RuntimeError(\n'
+
+[33m[W 2026-06-10 14:06:27,684][0m Trial 14 failed with parameters: {} because of the following error: RuntimeError("<class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>
+  File "/tmp/ipykernel_1473657/172870663.py", line 11, in objective
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result
+    self._verify_initialized()
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized
+    raise RuntimeError(
+RuntimeError: <class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.
+[33m[W 2026-06-10 14:06:27,684][0m Trial 14 failed with value None.[0m
+2026-06-10 14:06:27,687 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-29058374-90c0-40ae-97fb-c940186830cd
+State:     executing
+Task:  <Task 'optimize-29058374-90c0-40ae-97fb-c940186830cd' optimize(..., ...)>
+Exception: 'RuntimeError("<class \'distributed.client.Future\'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>\n  File "/tmp/ipykernel_1473657/172870663.py", line 11, in objective\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result\n    self._verify_initialized()\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized\n    raise RuntimeError(\n'
+
+[33m[W 2026-06-10 14:07:15,924][0m Trial 0 failed with parameters: {} because of the following error: TypeError('objective() takes 1 positional argument but 5 were given').[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>
+TypeError: objective() takes 1 positional argument but 5 were given
+[33m[W 2026-06-10 14:07:15,925][0m Trial 0 failed with value None.[0m
+2026-06-10 14:07:15,927 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-851a4233-51c2-4ded-85bd-834a34bf4cd9
+State:     executing
+Task:  <Task 'optimize-851a4233-51c2-4ded-85bd-834a34bf4cd9' optimize(..., ...)>
+Exception: "TypeError('objective() takes 1 positional argument but 5 were given')"
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>\n'
+
+[33m[W 2026-06-10 14:07:16,022][0m Trial 4 failed with parameters: {} because of the following error: TypeError('objective() takes 1 positional argument but 5 were given').[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>
+TypeError: objective() takes 1 positional argument but 5 were given
+[33m[W 2026-06-10 14:07:16,023][0m Trial 4 failed with value None.[0m
+2026-06-10 14:07:16,024 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-79330acf-a6cd-4024-86b2-66b216043e28
+State:     executing
+Task:  <Task 'optimize-79330acf-a6cd-4024-86b2-66b216043e28' optimize(..., ...)>
+Exception: "TypeError('objective() takes 1 positional argument but 5 were given')"
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>\n'
+
+[33m[W 2026-06-10 14:07:16,042][0m Trial 2 failed with parameters: {} because of the following error: TypeError('objective() takes 1 positional argument but 5 were given').[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>
+TypeError: objective() takes 1 positional argument but 5 were given
+[33m[W 2026-06-10 14:07:16,043][0m Trial 2 failed with value None.[0m
+2026-06-10 14:07:16,044 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-77de4c96-cc89-424c-b3a1-da7172422ef8
+State:     executing
+Task:  <Task 'optimize-77de4c96-cc89-424c-b3a1-da7172422ef8' optimize(..., ...)>
+Exception: "TypeError('objective() takes 1 positional argument but 5 were given')"
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>\n'
+
+[33m[W 2026-06-10 14:07:16,046][0m Trial 5 failed with parameters: {} because of the following error: TypeError('objective() takes 1 positional argument but 5 were given').[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>
+TypeError: objective() takes 1 positional argument but 5 were given
+[33m[W 2026-06-10 14:07:16,046][0m Trial 5 failed with value None.[0m
+2026-06-10 14:07:16,048 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-330feba8-6674-4bd8-96c2-a6730f6beb5e
+State:     executing
+Task:  <Task 'optimize-330feba8-6674-4bd8-96c2-a6730f6beb5e' optimize(..., ...)>
+Exception: "TypeError('objective() takes 1 positional argument but 5 were given')"
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>\n'
+
+[33m[W 2026-06-10 14:07:16,051][0m Trial 9 failed with parameters: {} because of the following error: TypeError('objective() takes 1 positional argument but 5 were given').[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>
+TypeError: objective() takes 1 positional argument but 5 were given
+[33m[W 2026-06-10 14:07:16,051][0m Trial 10 failed with parameters: {} because of the following error: TypeError('objective() takes 1 positional argument but 5 were given').[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>
+TypeError: objective() takes 1 positional argument but 5 were given
+[33m[W 2026-06-10 14:07:16,051][0m Trial 9 failed with value None.[0m
+[33m[W 2026-06-10 14:07:16,052][0m Trial 10 failed with value None.[0m
+[33m[W 2026-06-10 14:07:16,055][0m Trial 11 failed with parameters: {} because of the following error: TypeError('objective() takes 1 positional argument but 5 were given').[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>
+TypeError: objective() takes 1 positional argument but 5 were given
+2026-06-10 14:07:16,055 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-a78acc56-7b27-4b29-a3ad-c7d5a3b5b27d
+State:     executing
+Task:  <Task 'optimize-a78acc56-7b27-4b29-a3ad-c7d5a3b5b27d' optimize(..., ...)>
+Exception: "TypeError('objective() takes 1 positional argument but 5 were given')"
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>\n'
+
+2026-06-10 14:07:16,055 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-981ddaf4-cb73-4388-aaa6-5ca3833b27d4
+State:     executing
+Task:  <Task 'optimize-981ddaf4-cb73-4388-aaa6-5ca3833b27d4' optimize(..., ...)>
+Exception: "TypeError('objective() takes 1 positional argument but 5 were given')"
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>\n'
+
+[33m[W 2026-06-10 14:07:16,055][0m Trial 11 failed with value None.[0m
+2026-06-10 14:07:16,058 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-a8c5f255-6830-4252-ab92-74230d784027
+State:     executing
+Task:  <Task 'optimize-a8c5f255-6830-4252-ab92-74230d784027' optimize(..., ...)>
+Exception: "TypeError('objective() takes 1 positional argument but 5 were given')"
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>\n'
+
+[33m[W 2026-06-10 14:07:16,060][0m Trial 12 failed with parameters: {} because of the following error: TypeError('objective() takes 1 positional argument but 5 were given').[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>
+TypeError: objective() takes 1 positional argument but 5 were given
+[33m[W 2026-06-10 14:07:16,060][0m Trial 12 failed with value None.[0m
+2026-06-10 14:07:16,061 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-b7a4c90b-9821-4399-86a8-26cc2054e49f
+State:     executing
+Task:  <Task 'optimize-b7a4c90b-9821-4399-86a8-26cc2054e49f' optimize(..., ...)>
+Exception: "TypeError('objective() takes 1 positional argument but 5 were given')"
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>\n'
+
+[33m[W 2026-06-10 14:07:16,063][0m Trial 13 failed with parameters: {} because of the following error: TypeError('objective() takes 1 positional argument but 5 were given').[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>
+TypeError: objective() takes 1 positional argument but 5 were given
+[33m[W 2026-06-10 14:07:16,063][0m Trial 13 failed with value None.[0m
+2026-06-10 14:07:16,064 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-02e59a18-4e1b-407a-a80d-ba1879f07e6d
+State:     executing
+Task:  <Task 'optimize-02e59a18-4e1b-407a-a80d-ba1879f07e6d' optimize(..., ...)>
+Exception: "TypeError('objective() takes 1 positional argument but 5 were given')"
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/4289709799.py", line 14, in <lambda>\n'
+
+[33m[W 2026-06-10 14:07:26,571][0m Trial 0 failed with parameters: {} because of the following error: RuntimeError("<class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/1542698560.py", line 11, in objective
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result
+    self._verify_initialized()
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized
+    raise RuntimeError(
+RuntimeError: <class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.
+[33m[W 2026-06-10 14:07:26,574][0m Trial 0 failed with value None.[0m
+2026-06-10 14:07:26,576 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-03deaad4-c422-4151-9042-94cd5cf45fef
+State:     executing
+Task:  <Task 'optimize-03deaad4-c422-4151-9042-94cd5cf45fef' optimize(..., ...)>
+Exception: 'RuntimeError("<class \'distributed.client.Future\'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/1542698560.py", line 11, in objective\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result\n    self._verify_initialized()\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized\n    raise RuntimeError(\n'
+
+[33m[W 2026-06-10 14:07:26,615][0m Trial 3 failed with parameters: {} because of the following error: RuntimeError("<class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/1542698560.py", line 11, in objective
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result
+    self._verify_initialized()
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized
+    raise RuntimeError(
+RuntimeError: <class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.
+[33m[W 2026-06-10 14:07:26,615][0m Trial 3 failed with value None.[0m
+2026-06-10 14:07:26,616 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-9b28deca-00ba-44c1-ace5-6da019b7ac19
+State:     executing
+Task:  <Task 'optimize-9b28deca-00ba-44c1-ace5-6da019b7ac19' optimize(..., ...)>
+Exception: 'RuntimeError("<class \'distributed.client.Future\'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/1542698560.py", line 11, in objective\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result\n    self._verify_initialized()\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized\n    raise RuntimeError(\n'
+
+[33m[W 2026-06-10 14:07:26,643][0m Trial 2 failed with parameters: {} because of the following error: RuntimeError("<class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/1542698560.py", line 11, in objective
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result
+    self._verify_initialized()
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized
+    raise RuntimeError(
+RuntimeError: <class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.
+[33m[W 2026-06-10 14:07:26,644][0m Trial 2 failed with value None.[0m
+2026-06-10 14:07:26,645 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-8055f94e-a64b-4082-a4bf-6bf14a9dc910
+State:     executing
+Task:  <Task 'optimize-8055f94e-a64b-4082-a4bf-6bf14a9dc910' optimize(..., ...)>
+Exception: 'RuntimeError("<class \'distributed.client.Future\'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/1542698560.py", line 11, in objective\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result\n    self._verify_initialized()\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized\n    raise RuntimeError(\n'
+
+[33m[W 2026-06-10 14:07:26,665][0m Trial 5 failed with parameters: {} because of the following error: RuntimeError("<class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/1542698560.py", line 11, in objective
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result
+    self._verify_initialized()
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized
+    raise RuntimeError(
+RuntimeError: <class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.
+[33m[W 2026-06-10 14:07:26,665][0m Trial 5 failed with value None.[0m
+2026-06-10 14:07:26,666 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-eaff91c5-9b07-4ddb-936e-1f06987bd929
+State:     executing
+Task:  <Task 'optimize-eaff91c5-9b07-4ddb-936e-1f06987bd929' optimize(..., ...)>
+Exception: 'RuntimeError("<class \'distributed.client.Future\'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/1542698560.py", line 11, in objective\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result\n    self._verify_initialized()\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized\n    raise RuntimeError(\n'
+
+[33m[W 2026-06-10 14:07:26,697][0m Trial 4 failed with parameters: {} because of the following error: RuntimeError("<class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/1542698560.py", line 11, in objective
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result
+    self._verify_initialized()
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized
+    raise RuntimeError(
+RuntimeError: <class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.
+[33m[W 2026-06-10 14:07:26,698][0m Trial 4 failed with value None.[0m
+2026-06-10 14:07:26,699 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-62610004-77f4-4598-a602-457b173b5659
+State:     executing
+Task:  <Task 'optimize-62610004-77f4-4598-a602-457b173b5659' optimize(..., ...)>
+Exception: 'RuntimeError("<class \'distributed.client.Future\'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/1542698560.py", line 11, in objective\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result\n    self._verify_initialized()\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized\n    raise RuntimeError(\n'
+
+[33m[W 2026-06-10 14:07:26,700][0m Trial 6 failed with parameters: {} because of the following error: RuntimeError("<class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/1542698560.py", line 11, in objective
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result
+    self._verify_initialized()
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized
+    raise RuntimeError(
+RuntimeError: <class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.
+[33m[W 2026-06-10 14:07:26,701][0m Trial 6 failed with value None.[0m
+2026-06-10 14:07:26,703 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-c4ade7d8-213b-45ee-8302-eb8ce6e664ec
+State:     executing
+Task:  <Task 'optimize-c4ade7d8-213b-45ee-8302-eb8ce6e664ec' optimize(..., ...)>
+Exception: 'RuntimeError("<class \'distributed.client.Future\'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/1542698560.py", line 11, in objective\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result\n    self._verify_initialized()\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized\n    raise RuntimeError(\n'
+
+[33m[W 2026-06-10 14:07:26,706][0m Trial 11 failed with parameters: {} because of the following error: RuntimeError("<class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/1542698560.py", line 11, in objective
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result
+    self._verify_initialized()
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized
+    raise RuntimeError(
+RuntimeError: <class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.
+[33m[W 2026-06-10 14:07:26,707][0m Trial 11 failed with value None.[0m
+2026-06-10 14:07:26,708 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-9f3593bb-fde8-4146-9df9-aeafbf981e03
+State:     executing
+Task:  <Task 'optimize-9f3593bb-fde8-4146-9df9-aeafbf981e03' optimize(..., ...)>
+Exception: 'RuntimeError("<class \'distributed.client.Future\'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/1542698560.py", line 11, in objective\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result\n    self._verify_initialized()\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized\n    raise RuntimeError(\n'
+
+[33m[W 2026-06-10 14:07:26,710][0m Trial 13 failed with parameters: {} because of the following error: RuntimeError("<class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/1542698560.py", line 11, in objective
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result
+    self._verify_initialized()
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized
+    raise RuntimeError(
+RuntimeError: <class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.
+[33m[W 2026-06-10 14:07:26,710][0m Trial 12 failed with parameters: {} because of the following error: RuntimeError("<class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1473657/1542698560.py", line 11, in objective
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result
+    self._verify_initialized()
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized
+    raise RuntimeError(
+RuntimeError: <class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.
+[33m[W 2026-06-10 14:07:26,710][0m Trial 13 failed with value None.[0m
+[33m[W 2026-06-10 14:07:26,711][0m Trial 12 failed with value None.[0m
+2026-06-10 14:07:26,712 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-a4f0e297-099d-476a-9127-922ba240105b
+State:     executing
+Task:  <Task 'optimize-a4f0e297-099d-476a-9127-922ba240105b' optimize(..., ...)>
+Exception: 'RuntimeError("<class \'distributed.client.Future\'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/1542698560.py", line 11, in objective\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result\n    self._verify_initialized()\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized\n    raise RuntimeError(\n'
+
+2026-06-10 14:07:26,713 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-3edd0b6c-4663-4f3a-aa7f-93cd79c336f9
+State:     executing
+Task:  <Task 'optimize-3edd0b6c-4663-4f3a-aa7f-93cd79c336f9' optimize(..., ...)>
+Exception: 'RuntimeError("<class \'distributed.client.Future\'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1473657/1542698560.py", line 11, in objective\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result\n    self._verify_initialized()\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized\n    raise RuntimeError(\n'
+
+2026-06-10 14:19:16,431 - distributed.nanny - INFO - Nanny asking worker to close. Reason: check-worker-ttl-1781122756.4300072
+2026-06-10 14:19:20,433 - distributed.nanny - WARNING - Worker process still alive after 4.0 seconds, killing
+2026-06-10 14:19:21,158 - distributed.nanny - INFO - Worker process 476194 was killed by signal 9
+2026-06-10 14:19:21,160 - distributed.nanny - WARNING - Restarting worker
+slurmstepd: error: *** JOB 563906 ON nukwa-03.cnca CANCELLED AT 2026-06-10T14:19:35 ***
