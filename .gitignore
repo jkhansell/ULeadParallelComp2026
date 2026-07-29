@@ -216,3 +216,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+*.out
+**/*.ipynb_checkpoints
+.claude
+.mcp.json
+CLAUDE.md

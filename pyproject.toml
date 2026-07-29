@@ -23,6 +23,12 @@ dependencies = [
     "rapids", # Pinning version for stability in tests
     "cupy-cuda12x",
     "joblib>=1.5.3",
+    "opencv-python-headless",
+    # Deep learning (CNN bridge + AI model inference)
+    "flax",       # Flax NNX for building a small CNN from scratch in JAX
+    "timm",       # Pretrained vision models (AlexNet, ResNet, ViT) with ImageNet classes
+    "diffusers",  # DDPM inference
+    "torch",      # PyTorch backbone for timm/diffusers
 ]
 
 [tool.jupyter]
