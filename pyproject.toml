@@ -14,6 +14,7 @@ dependencies = [
     "numba",
     "matplotlib",
     "scipy",
+    "jupyter",
     "jupyterlab",
     "ipykernel",
     # Base dependencies for the accelerators
@@ -29,7 +30,9 @@ dependencies = [
     "timm",       # Pretrained vision models (AlexNet, ResNet, ViT) with ImageNet classes
     "diffusers",  # DDPM inference
     "torch",      # PyTorch backbone for timm/diffusers
+    "pypdf>=6.14.2",
+    "numpyro>=0.21.0",
 ]
 
 [tool.jupyter]
-lab = "jupyter lab --allow-root"
+lab = "jupyter lab"
