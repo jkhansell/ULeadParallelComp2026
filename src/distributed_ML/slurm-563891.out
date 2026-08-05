@@ -1,0 +1,7 @@
+Run 'mamba init' to be able to run mamba activate/deactivate
+and start a new shell session. Or use conda to activate/deactivate.
+
+Usage: dask-cuda-worker [OPTIONS] [SCHEDULER] [PRELOAD_ARGV]...
+Try 'dask-cuda-worker --help' for help.
+
+Error: Got unexpected extra argument: (tcp://11.0.0.136:8786)

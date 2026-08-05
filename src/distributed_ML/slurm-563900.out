@@ -1,0 +1,783 @@
+Run 'mamba init' to be able to run mamba activate/deactivate
+and start a new shell session. Or use conda to activate/deactivate.
+
+2026-06-10 13:50:53,868 - distributed.nanny - INFO -         Start Nanny at: 'tcp://11.0.0.105:43005'
+2026-06-10 13:50:55,877 - distributed.diskutils - INFO - Found stale lock file and directory '/tmp/dask-scratch-space/worker-cptbemgh', purging
+2026-06-10 13:50:55,895 - distributed.preloading - INFO - Creating preload: dask_cuda.initialize
+2026-06-10 13:50:55,895 - distributed.preloading - INFO - Import preload module: dask_cuda.initialize
+2026-06-10 13:50:56,564 - distributed.preloading - INFO - Run preload setup: dask_cuda.initialize
+2026-06-10 13:50:56,564 - distributed.worker - INFO -       Start worker at:     tcp://11.0.0.105:45429
+2026-06-10 13:50:56,565 - distributed.worker - INFO -          Listening to:     tcp://11.0.0.105:45429
+2026-06-10 13:50:56,565 - distributed.worker - INFO -           Worker name:             SLURMCluster-1
+2026-06-10 13:50:56,565 - distributed.worker - INFO -          dashboard at:           11.0.0.105:40595
+2026-06-10 13:50:56,565 - distributed.worker - INFO - Waiting to connect to:      tcp://11.0.0.136:8786
+2026-06-10 13:50:56,565 - distributed.worker - INFO - -------------------------------------------------
+2026-06-10 13:50:56,565 - distributed.worker - INFO -               Threads:                          4
+2026-06-10 13:50:56,565 - distributed.worker - INFO -                Memory:                  27.94 GiB
+2026-06-10 13:50:56,565 - distributed.worker - INFO -       Local Directory: /tmp/dask-scratch-space/worker-irkw1qka
+2026-06-10 13:50:56,565 - distributed.worker - INFO - Starting Worker plugin CUDFSetup-60271485-fc76-4fbd-adb3-e0a30f67a8b5
+2026-06-10 13:50:57,053 - distributed.worker - INFO - Starting Worker plugin PreImport-0dcc05c7-1703-4a9e-a3bf-bfa1a7c1cbc1
+2026-06-10 13:50:57,053 - distributed.worker - INFO - Starting Worker plugin CPUAffinity-15723606-fa21-4e50-aff0-b0199bef43c7
+2026-06-10 13:50:57,053 - distributed.worker - INFO - Starting Worker plugin RMMSetup-1ccc6bd5-b91c-4955-97be-c6ba2c6a8047
+2026-06-10 13:50:57,053 - distributed.worker - INFO - -------------------------------------------------
+2026-06-10 13:50:57,208 - distributed.worker - INFO - Starting Worker plugin shuffle
+2026-06-10 13:50:57,209 - distributed.worker - INFO -         Registered to:      tcp://11.0.0.136:8786
+2026-06-10 13:50:57,209 - distributed.worker - INFO - -------------------------------------------------
+2026-06-10 13:50:57,211 - distributed.core - INFO - Starting established connection to tcp://11.0.0.136:8786
+2026-06-10 13:51:10,760 - distributed.worker - INFO - Run out-of-band function 'gpu_test'
+/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/protocol/pickle.py:92: ExperimentalWarning: DaskStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  return pickle.loads(x)
+[33m[W 2026-06-10 13:51:25,890][0m Trial 4 failed with parameters: {} because of the following error: TypeError("objective() missing 4 required positional arguments: 'X_train', 'y_train', 'X_test', and 'y_test'").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+TypeError: objective() missing 4 required positional arguments: 'X_train', 'y_train', 'X_test', and 'y_test'
+[33m[W 2026-06-10 13:51:25,891][0m Trial 6 failed with parameters: {} because of the following error: TypeError("objective() missing 4 required positional arguments: 'X_train', 'y_train', 'X_test', and 'y_test'").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+TypeError: objective() missing 4 required positional arguments: 'X_train', 'y_train', 'X_test', and 'y_test'
+[33m[W 2026-06-10 13:51:25,891][0m Trial 5 failed with parameters: {} because of the following error: TypeError("objective() missing 4 required positional arguments: 'X_train', 'y_train', 'X_test', and 'y_test'").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+TypeError: objective() missing 4 required positional arguments: 'X_train', 'y_train', 'X_test', and 'y_test'
+[33m[W 2026-06-10 13:51:25,893][0m Trial 4 failed with value None.[0m
+[33m[W 2026-06-10 13:51:25,894][0m Trial 6 failed with value None.[0m
+[33m[W 2026-06-10 13:51:25,894][0m Trial 5 failed with value None.[0m
+[33m[W 2026-06-10 13:51:25,942][0m Trial 7 failed with parameters: {} because of the following error: TypeError("objective() missing 4 required positional arguments: 'X_train', 'y_train', 'X_test', and 'y_test'").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+TypeError: objective() missing 4 required positional arguments: 'X_train', 'y_train', 'X_test', and 'y_test'
+[33m[W 2026-06-10 13:51:25,943][0m Trial 7 failed with value None.[0m
+2026-06-10 13:51:26,254 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-379c28ea-6254-4cba-ac83-c785267e427d
+State:     executing
+Task:  <Task 'optimize-379c28ea-6254-4cba-ac83-c785267e427d' optimize(..., ...)>
+Exception: 'TypeError("objective() missing 4 required positional arguments: \'X_train\', \'y_train\', \'X_test\', and \'y_test\'")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n'
+
+2026-06-10 13:51:26,255 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-c143f35a-c207-405a-94fc-0892f108f03f
+State:     executing
+Task:  <Task 'optimize-c143f35a-c207-405a-94fc-0892f108f03f' optimize(..., ...)>
+Exception: 'TypeError("objective() missing 4 required positional arguments: \'X_train\', \'y_train\', \'X_test\', and \'y_test\'")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n'
+
+2026-06-10 13:51:26,256 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-f8a2db20-39d8-478a-b95d-4bfd896508b7
+State:     executing
+Task:  <Task 'optimize-f8a2db20-39d8-478a-b95d-4bfd896508b7' optimize(..., ...)>
+Exception: 'TypeError("objective() missing 4 required positional arguments: \'X_train\', \'y_train\', \'X_test\', and \'y_test\'")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n'
+
+2026-06-10 13:51:26,257 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-3cf4d0b3-4377-42dc-9d86-918c9a5299af
+State:     executing
+Task:  <Task 'optimize-3cf4d0b3-4377-42dc-9d86-918c9a5299af' optimize(..., ...)>
+Exception: 'TypeError("objective() missing 4 required positional arguments: \'X_train\', \'y_train\', \'X_test\', and \'y_test\'")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n'
+
+[33m[W 2026-06-10 13:51:26,326][0m Trial 11 failed with parameters: {} because of the following error: TypeError("objective() missing 4 required positional arguments: 'X_train', 'y_train', 'X_test', and 'y_test'").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+TypeError: objective() missing 4 required positional arguments: 'X_train', 'y_train', 'X_test', and 'y_test'
+[33m[W 2026-06-10 13:51:26,327][0m Trial 11 failed with value None.[0m
+2026-06-10 13:51:26,329 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-b74bd149-5884-4d5b-917a-9834e29ea774
+State:     executing
+Task:  <Task 'optimize-b74bd149-5884-4d5b-917a-9834e29ea774' optimize(..., ...)>
+Exception: 'TypeError("objective() missing 4 required positional arguments: \'X_train\', \'y_train\', \'X_test\', and \'y_test\'")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n'
+
+[33m[W 2026-06-10 13:51:26,362][0m Trial 13 failed with parameters: {} because of the following error: TypeError("objective() missing 4 required positional arguments: 'X_train', 'y_train', 'X_test', and 'y_test'").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+TypeError: objective() missing 4 required positional arguments: 'X_train', 'y_train', 'X_test', and 'y_test'
+[33m[W 2026-06-10 13:51:26,363][0m Trial 13 failed with value None.[0m
+2026-06-10 13:51:26,365 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-e0006b61-696f-44ff-bcde-6cbe086de112
+State:     executing
+Task:  <Task 'optimize-e0006b61-696f-44ff-bcde-6cbe086de112' optimize(..., ...)>
+Exception: 'TypeError("objective() missing 4 required positional arguments: \'X_train\', \'y_train\', \'X_test\', and \'y_test\'")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n'
+
+[33m[W 2026-06-10 13:51:26,367][0m Trial 14 failed with parameters: {} because of the following error: TypeError("objective() missing 4 required positional arguments: 'X_train', 'y_train', 'X_test', and 'y_test'").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+TypeError: objective() missing 4 required positional arguments: 'X_train', 'y_train', 'X_test', and 'y_test'
+[33m[W 2026-06-10 13:51:26,368][0m Trial 14 failed with value None.[0m
+2026-06-10 13:51:26,371 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-ec90a950-9d66-4174-b75d-d9fe879d5db9
+State:     executing
+Task:  <Task 'optimize-ec90a950-9d66-4174-b75d-d9fe879d5db9' optimize(..., ...)>
+Exception: 'TypeError("objective() missing 4 required positional arguments: \'X_train\', \'y_train\', \'X_test\', and \'y_test\'")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n'
+
+[33m[W 2026-06-10 13:51:26,388][0m Trial 12 failed with parameters: {} because of the following error: TypeError("objective() missing 4 required positional arguments: 'X_train', 'y_train', 'X_test', and 'y_test'").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+TypeError: objective() missing 4 required positional arguments: 'X_train', 'y_train', 'X_test', and 'y_test'
+[33m[W 2026-06-10 13:51:26,389][0m Trial 12 failed with value None.[0m
+2026-06-10 13:51:26,392 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-21436cf2-409b-4383-866b-3fd18692c648
+State:     executing
+Task:  <Task 'optimize-21436cf2-409b-4383-866b-3fd18692c648' optimize(..., ...)>
+Exception: 'TypeError("objective() missing 4 required positional arguments: \'X_train\', \'y_train\', \'X_test\', and \'y_test\'")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n'
+
+[33m[W 2026-06-10 13:52:14,988][0m Trial 1 failed with parameters: {} because of the following error: TypeError("objective() got an unexpected keyword argument 'X_train_f'").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+TypeError: objective() got an unexpected keyword argument 'X_train_f'
+[33m[W 2026-06-10 13:52:14,990][0m Trial 1 failed with value None.[0m
+2026-06-10 13:52:14,994 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-06f638bd-6596-4037-a6f5-a5dc550fb69c
+State:     executing
+Task:  <Task 'optimize-06f638bd-6596-4037-a6f5-a5dc550fb69c' optimize(..., ...)>
+Exception: 'TypeError("objective() got an unexpected keyword argument \'X_train_f\'")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n'
+
+[33m[W 2026-06-10 13:52:15,174][0m Trial 4 failed with parameters: {} because of the following error: TypeError("objective() got an unexpected keyword argument 'X_train_f'").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+TypeError: objective() got an unexpected keyword argument 'X_train_f'
+[33m[W 2026-06-10 13:52:15,175][0m Trial 5 failed with parameters: {} because of the following error: TypeError("objective() got an unexpected keyword argument 'X_train_f'").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+TypeError: objective() got an unexpected keyword argument 'X_train_f'
+[33m[W 2026-06-10 13:52:15,176][0m Trial 4 failed with value None.[0m
+[33m[W 2026-06-10 13:52:15,177][0m Trial 5 failed with value None.[0m
+2026-06-10 13:52:15,211 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-30c0a81d-4a4d-4cee-83d0-1d5ad8049d1e
+State:     executing
+Task:  <Task 'optimize-30c0a81d-4a4d-4cee-83d0-1d5ad8049d1e' optimize(..., ...)>
+Exception: 'TypeError("objective() got an unexpected keyword argument \'X_train_f\'")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n'
+
+2026-06-10 13:52:15,212 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-935ae30b-6b73-4c01-9a04-02f92f4b05b4
+State:     executing
+Task:  <Task 'optimize-935ae30b-6b73-4c01-9a04-02f92f4b05b4' optimize(..., ...)>
+Exception: 'TypeError("objective() got an unexpected keyword argument \'X_train_f\'")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n'
+
+[33m[W 2026-06-10 13:52:15,222][0m Trial 7 failed with parameters: {} because of the following error: TypeError("objective() got an unexpected keyword argument 'X_train_f'").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+TypeError: objective() got an unexpected keyword argument 'X_train_f'
+[33m[W 2026-06-10 13:52:15,224][0m Trial 7 failed with value None.[0m
+2026-06-10 13:52:15,227 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-c8522f05-88a7-4390-8c54-723f901b6f9d
+State:     executing
+Task:  <Task 'optimize-c8522f05-88a7-4390-8c54-723f901b6f9d' optimize(..., ...)>
+Exception: 'TypeError("objective() got an unexpected keyword argument \'X_train_f\'")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n'
+
+[33m[W 2026-06-10 13:52:15,229][0m Trial 13 failed with parameters: {} because of the following error: TypeError("objective() got an unexpected keyword argument 'X_train_f'").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+TypeError: objective() got an unexpected keyword argument 'X_train_f'
+[33m[W 2026-06-10 13:52:15,230][0m Trial 13 failed with value None.[0m
+[33m[W 2026-06-10 13:52:15,230][0m Trial 14 failed with parameters: {} because of the following error: TypeError("objective() got an unexpected keyword argument 'X_train_f'").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+TypeError: objective() got an unexpected keyword argument 'X_train_f'
+[33m[W 2026-06-10 13:52:15,233][0m Trial 14 failed with value None.[0m
+2026-06-10 13:52:15,234 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-680033a3-bcdf-4a32-a5bf-4ba7a7a35c5d
+State:     executing
+Task:  <Task 'optimize-680033a3-bcdf-4a32-a5bf-4ba7a7a35c5d' optimize(..., ...)>
+Exception: 'TypeError("objective() got an unexpected keyword argument \'X_train_f\'")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n'
+
+2026-06-10 13:52:15,237 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-0c2978d0-c864-4797-9835-ab5f3340c9dc
+State:     executing
+Task:  <Task 'optimize-0c2978d0-c864-4797-9835-ab5f3340c9dc' optimize(..., ...)>
+Exception: 'TypeError("objective() got an unexpected keyword argument \'X_train_f\'")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n'
+
+[33m[W 2026-06-10 13:53:09,771][0m Trial 5 failed with parameters: {} because of the following error: TypeError("objective() got an unexpected keyword argument 'X_train_f'").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+TypeError: objective() got an unexpected keyword argument 'X_train_f'
+[33m[W 2026-06-10 13:53:09,772][0m Trial 5 failed with value None.[0m
+2026-06-10 13:53:09,775 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-3c52fdd3-aa02-446d-871d-c7db449eed7a
+State:     executing
+Task:  <Task 'optimize-3c52fdd3-aa02-446d-871d-c7db449eed7a' optimize(..., ...)>
+Exception: 'TypeError("objective() got an unexpected keyword argument \'X_train_f\'")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n'
+
+[33m[W 2026-06-10 13:53:09,801][0m Trial 1 failed with parameters: {} because of the following error: TypeError("objective() got an unexpected keyword argument 'X_train_f'").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+TypeError: objective() got an unexpected keyword argument 'X_train_f'
+[33m[W 2026-06-10 13:53:09,803][0m Trial 1 failed with value None.[0m
+2026-06-10 13:53:09,806 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-9702dbbf-68ba-40c5-8b05-acea865b59e6
+State:     executing
+Task:  <Task 'optimize-9702dbbf-68ba-40c5-8b05-acea865b59e6' optimize(..., ...)>
+Exception: 'TypeError("objective() got an unexpected keyword argument \'X_train_f\'")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n'
+
+[33m[W 2026-06-10 13:53:09,858][0m Trial 6 failed with parameters: {} because of the following error: TypeError("objective() got an unexpected keyword argument 'X_train_f'").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+TypeError: objective() got an unexpected keyword argument 'X_train_f'
+[33m[W 2026-06-10 13:53:09,859][0m Trial 7 failed with parameters: {} because of the following error: TypeError("objective() got an unexpected keyword argument 'X_train_f'").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+TypeError: objective() got an unexpected keyword argument 'X_train_f'
+[33m[W 2026-06-10 13:53:09,860][0m Trial 6 failed with value None.[0m
+[33m[W 2026-06-10 13:53:09,863][0m Trial 7 failed with value None.[0m
+2026-06-10 13:53:09,867 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-ce23fa0c-e2cb-48c4-bf08-9e0393295f2f
+State:     executing
+Task:  <Task 'optimize-ce23fa0c-e2cb-48c4-bf08-9e0393295f2f' optimize(..., ...)>
+Exception: 'TypeError("objective() got an unexpected keyword argument \'X_train_f\'")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n'
+
+2026-06-10 13:53:09,871 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-ab9b14a8-ad28-4c8d-9738-17b202f1c002
+State:     executing
+Task:  <Task 'optimize-ab9b14a8-ad28-4c8d-9738-17b202f1c002' optimize(..., ...)>
+Exception: 'TypeError("objective() got an unexpected keyword argument \'X_train_f\'")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n'
+
+[33m[W 2026-06-10 13:53:09,864][0m Trial 9 failed with parameters: {} because of the following error: TypeError("objective() got an unexpected keyword argument 'X_train_f'").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+TypeError: objective() got an unexpected keyword argument 'X_train_f'
+[33m[W 2026-06-10 13:53:09,873][0m Trial 9 failed with value None.[0m
+[33m[W 2026-06-10 13:53:09,874][0m Trial 13 failed with parameters: {} because of the following error: TypeError("objective() got an unexpected keyword argument 'X_train_f'").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+TypeError: objective() got an unexpected keyword argument 'X_train_f'
+[33m[W 2026-06-10 13:53:09,877][0m Trial 13 failed with value None.[0m
+2026-06-10 13:53:09,878 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-0609051f-e5eb-4719-a2b6-2ac1d2ea9d2a
+State:     executing
+Task:  <Task 'optimize-0609051f-e5eb-4719-a2b6-2ac1d2ea9d2a' optimize(..., ...)>
+Exception: 'TypeError("objective() got an unexpected keyword argument \'X_train_f\'")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n'
+
+2026-06-10 13:53:09,882 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-9686e329-7a5b-47b4-a9ef-1066d9932ac7
+State:     executing
+Task:  <Task 'optimize-9686e329-7a5b-47b4-a9ef-1066d9932ac7' optimize(..., ...)>
+Exception: 'TypeError("objective() got an unexpected keyword argument \'X_train_f\'")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n'
+
+[33m[W 2026-06-10 13:53:09,884][0m Trial 14 failed with parameters: {} because of the following error: TypeError("objective() got an unexpected keyword argument 'X_train_f'").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+TypeError: objective() got an unexpected keyword argument 'X_train_f'
+[33m[W 2026-06-10 13:53:09,885][0m Trial 14 failed with value None.[0m
+2026-06-10 13:53:09,888 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-ecdcb972-4588-4bd2-972a-c8e122d27948
+State:     executing
+Task:  <Task 'optimize-ecdcb972-4588-4bd2-972a-c8e122d27948' optimize(..., ...)>
+Exception: 'TypeError("objective() got an unexpected keyword argument \'X_train_f\'")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n'
+
+[33m[W 2026-06-10 13:53:51,744][0m Trial 5 failed with parameters: {'n_estimators': 50, 'max_depth': 11, 'max_features': 0.7669074474525812} because of the following error: AttributeError("'Future' object has no attribute 'shape'").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1471241/4168265768.py", line 26, in objective
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/cuml/internals/api_decorators.py", line 216, in wrapper
+    ret = func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/cuml/internals/api_decorators.py", line 368, in dispatch
+    return self.dispatch_func(func_name, gpu_func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/cuml/internals/api_decorators.py", line 218, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "cuml/internals/base.pyx", line 757, in cuml.internals.base.UniversalBase.dispatch_func
+  File "cuml/internals/base.pyx", line 98, in cuml.internals.base.deprecate_non_keyword_only.decorator.inner
+  File "cuml/ensemble/randomforestclassifier.pyx", line 465, in cuml.ensemble.randomforestclassifier.RandomForestClassifier.fit
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/cuml/internals/api_decorators.py", line 189, in wrapper
+    if set_n_features_in and len(input_val.shape) >= 2:
+                                 ^^^^^^^^^^^^^^^
+AttributeError: 'Future' object has no attribute 'shape'
+[33m[W 2026-06-10 13:53:51,746][0m Trial 5 failed with value None.[0m
+2026-06-10 13:53:51,750 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-8711d95a-7356-48aa-ab44-dbc82d085950
+State:     executing
+Task:  <Task 'optimize-8711d95a-7356-48aa-ab44-dbc82d085950' optimize(..., ...)>
+Exception: 'AttributeError("\'Future\' object has no attribute \'shape\'")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1471241/4168265768.py", line 26, in objective\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/cuml/internals/api_decorators.py", line 216, in wrapper\n    ret = func(*args, **kwargs)\n          ^^^^^^^^^^^^^^^^^^^^^\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/cuml/internals/api_decorators.py", line 368, in dispatch\n    return self.dispatch_func(func_name, gpu_func, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/cuml/internals/api_decorators.py", line 218, in wrapper\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File "cuml/internals/base.pyx", line 757, in cuml.internals.base.UniversalBase.dispatch_func\n  File "cuml/internals/base.pyx", line 98, in cuml.internals.base.deprecate_non_keyword_only.decorator.inner\n  File "cuml/ensemble/randomforestclassifier.pyx", line 465, in cuml.ensemble.randomforestclassifier.RandomForestClassifier.fit\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/cuml/internals/api_decorators.py", line 189, in wrapper\n    if set_n_features_in and len(input_val.shape) >= 2:\n                                 ^^^^^^^^^^^^^^^\n'
+
+[33m[W 2026-06-10 13:53:51,745][0m Trial 6 failed with parameters: {'n_estimators': 300, 'max_depth': 8, 'max_features': 0.8334687598289986} because of the following error: AttributeError("'Future' object has no attribute 'shape'").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1471241/4168265768.py", line 26, in objective
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/cuml/internals/api_decorators.py", line 216, in wrapper
+    ret = func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/cuml/internals/api_decorators.py", line 368, in dispatch
+    return self.dispatch_func(func_name, gpu_func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/cuml/internals/api_decorators.py", line 218, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "cuml/internals/base.pyx", line 757, in cuml.internals.base.UniversalBase.dispatch_func
+  File "cuml/internals/base.pyx", line 98, in cuml.internals.base.deprecate_non_keyword_only.decorator.inner
+  File "cuml/ensemble/randomforestclassifier.pyx", line 465, in cuml.ensemble.randomforestclassifier.RandomForestClassifier.fit
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/cuml/internals/api_decorators.py", line 189, in wrapper
+    if set_n_features_in and len(input_val.shape) >= 2:
+                                 ^^^^^^^^^^^^^^^
+AttributeError: 'Future' object has no attribute 'shape'
+[33m[W 2026-06-10 13:53:51,747][0m Trial 7 failed with parameters: {'n_estimators': 175, 'max_depth': 13, 'max_features': 0.787175837478947} because of the following error: AttributeError("'Future' object has no attribute 'shape'").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1471241/4168265768.py", line 26, in objective
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/cuml/internals/api_decorators.py", line 216, in wrapper
+    ret = func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/cuml/internals/api_decorators.py", line 368, in dispatch
+    return self.dispatch_func(func_name, gpu_func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/cuml/internals/api_decorators.py", line 218, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "cuml/internals/base.pyx", line 757, in cuml.internals.base.UniversalBase.dispatch_func
+  File "cuml/internals/base.pyx", line 98, in cuml.internals.base.deprecate_non_keyword_only.decorator.inner
+  File "cuml/ensemble/randomforestclassifier.pyx", line 465, in cuml.ensemble.randomforestclassifier.RandomForestClassifier.fit
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/cuml/internals/api_decorators.py", line 189, in wrapper
+    if set_n_features_in and len(input_val.shape) >= 2:
+                                 ^^^^^^^^^^^^^^^
+AttributeError: 'Future' object has no attribute 'shape'
+[33m[W 2026-06-10 13:53:51,751][0m Trial 1 failed with parameters: {'n_estimators': 75, 'max_depth': 15, 'max_features': 0.8453521183911235} because of the following error: AttributeError("'Future' object has no attribute 'shape'").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1471241/4168265768.py", line 26, in objective
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/cuml/internals/api_decorators.py", line 216, in wrapper
+    ret = func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/cuml/internals/api_decorators.py", line 368, in dispatch
+    return self.dispatch_func(func_name, gpu_func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/cuml/internals/api_decorators.py", line 218, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "cuml/internals/base.pyx", line 757, in cuml.internals.base.UniversalBase.dispatch_func
+  File "cuml/internals/base.pyx", line 98, in cuml.internals.base.deprecate_non_keyword_only.decorator.inner
+  File "cuml/ensemble/randomforestclassifier.pyx", line 465, in cuml.ensemble.randomforestclassifier.RandomForestClassifier.fit
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/cuml/internals/api_decorators.py", line 189, in wrapper
+    if set_n_features_in and len(input_val.shape) >= 2:
+                                 ^^^^^^^^^^^^^^^
+AttributeError: 'Future' object has no attribute 'shape'
+[33m[W 2026-06-10 13:53:51,753][0m Trial 6 failed with value None.[0m
+[33m[W 2026-06-10 13:53:51,756][0m Trial 7 failed with value None.[0m
+[33m[W 2026-06-10 13:53:51,759][0m Trial 1 failed with value None.[0m
+2026-06-10 13:53:51,767 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-c85ba0b8-9d3f-485d-a6ff-963eb1cafd2b
+State:     executing
+Task:  <Task 'optimize-c85ba0b8-9d3f-485d-a6ff-963eb1cafd2b' optimize(..., ...)>
+Exception: 'AttributeError("\'Future\' object has no attribute \'shape\'")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1471241/4168265768.py", line 26, in objective\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/cuml/internals/api_decorators.py", line 216, in wrapper\n    ret = func(*args, **kwargs)\n          ^^^^^^^^^^^^^^^^^^^^^\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/cuml/internals/api_decorators.py", line 368, in dispatch\n    return self.dispatch_func(func_name, gpu_func, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/cuml/internals/api_decorators.py", line 218, in wrapper\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File "cuml/internals/base.pyx", line 757, in cuml.internals.base.UniversalBase.dispatch_func\n  File "cuml/internals/base.pyx", line 98, in cuml.internals.base.deprecate_non_keyword_only.decorator.inner\n  File "cuml/ensemble/randomforestclassifier.pyx", line 465, in cuml.ensemble.randomforestclassifier.RandomForestClassifier.fit\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/cuml/internals/api_decorators.py", line 189, in wrapper\n    if set_n_features_in and len(input_val.shape) >= 2:\n                                 ^^^^^^^^^^^^^^^\n'
+
+2026-06-10 13:53:51,776 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-9c5df84a-0675-49f4-8ee6-d0e5d82f786b
+State:     executing
+Task:  <Task 'optimize-9c5df84a-0675-49f4-8ee6-d0e5d82f786b' optimize(..., ...)>
+Exception: 'AttributeError("\'Future\' object has no attribute \'shape\'")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1471241/4168265768.py", line 26, in objective\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/cuml/internals/api_decorators.py", line 216, in wrapper\n    ret = func(*args, **kwargs)\n          ^^^^^^^^^^^^^^^^^^^^^\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/cuml/internals/api_decorators.py", line 368, in dispatch\n    return self.dispatch_func(func_name, gpu_func, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/cuml/internals/api_decorators.py", line 218, in wrapper\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File "cuml/internals/base.pyx", line 757, in cuml.internals.base.UniversalBase.dispatch_func\n  File "cuml/internals/base.pyx", line 98, in cuml.internals.base.deprecate_non_keyword_only.decorator.inner\n  File "cuml/ensemble/randomforestclassifier.pyx", line 465, in cuml.ensemble.randomforestclassifier.RandomForestClassifier.fit\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/cuml/internals/api_decorators.py", line 189, in wrapper\n    if set_n_features_in and len(input_val.shape) >= 2:\n                                 ^^^^^^^^^^^^^^^\n'
+
+2026-06-10 13:53:51,776 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-c47eb3b3-4cfe-4e73-8e7f-fae8de26f3b2
+State:     executing
+Task:  <Task 'optimize-c47eb3b3-4cfe-4e73-8e7f-fae8de26f3b2' optimize(..., ...)>
+Exception: 'AttributeError("\'Future\' object has no attribute \'shape\'")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1471241/4168265768.py", line 26, in objective\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/cuml/internals/api_decorators.py", line 216, in wrapper\n    ret = func(*args, **kwargs)\n          ^^^^^^^^^^^^^^^^^^^^^\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/cuml/internals/api_decorators.py", line 368, in dispatch\n    return self.dispatch_func(func_name, gpu_func, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/cuml/internals/api_decorators.py", line 218, in wrapper\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File "cuml/internals/base.pyx", line 757, in cuml.internals.base.UniversalBase.dispatch_func\n  File "cuml/internals/base.pyx", line 98, in cuml.internals.base.deprecate_non_keyword_only.decorator.inner\n  File "cuml/ensemble/randomforestclassifier.pyx", line 465, in cuml.ensemble.randomforestclassifier.RandomForestClassifier.fit\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/cuml/internals/api_decorators.py", line 189, in wrapper\n    if set_n_features_in and len(input_val.shape) >= 2:\n                                 ^^^^^^^^^^^^^^^\n'
+
+/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/protocol/core.py:175: ExperimentalWarning: DaskStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  return msgpack.loads(
+[33m[W 2026-06-10 13:55:42,079][0m Trial 0 failed with parameters: {} because of the following error: RuntimeError("<class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1471241/172870663.py", line 11, in objective
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result
+    self._verify_initialized()
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized
+    raise RuntimeError(
+RuntimeError: <class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.
+[33m[W 2026-06-10 13:55:42,081][0m Trial 0 failed with value None.[0m
+2026-06-10 13:55:42,086 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-2290d1f9-24c1-45ad-98e8-af050307cedc
+State:     executing
+Task:  <Task 'optimize-2290d1f9-24c1-45ad-98e8-af050307cedc' optimize(..., ...)>
+Exception: 'RuntimeError("<class \'distributed.client.Future\'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1471241/172870663.py", line 11, in objective\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result\n    self._verify_initialized()\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized\n    raise RuntimeError(\n'
+
+[33m[W 2026-06-10 13:55:42,195][0m Trial 7 failed with parameters: {} because of the following error: RuntimeError("<class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1471241/172870663.py", line 11, in objective
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result
+    self._verify_initialized()
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized
+    raise RuntimeError(
+RuntimeError: <class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.
+[33m[W 2026-06-10 13:55:42,197][0m Trial 7 failed with value None.[0m
+2026-06-10 13:55:42,203 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-dd21ec48-2d76-4367-9250-a7ea254f0164
+State:     executing
+Task:  <Task 'optimize-dd21ec48-2d76-4367-9250-a7ea254f0164' optimize(..., ...)>
+Exception: 'RuntimeError("<class \'distributed.client.Future\'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1471241/172870663.py", line 11, in objective\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result\n    self._verify_initialized()\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized\n    raise RuntimeError(\n'
+
+[33m[W 2026-06-10 13:55:42,206][0m Trial 9 failed with parameters: {} because of the following error: RuntimeError("<class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1471241/172870663.py", line 11, in objective
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result
+    self._verify_initialized()
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized
+    raise RuntimeError(
+RuntimeError: <class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.
+[33m[W 2026-06-10 13:55:42,208][0m Trial 9 failed with value None.[0m
+[33m[W 2026-06-10 13:55:42,210][0m Trial 8 failed with parameters: {} because of the following error: RuntimeError("<class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1471241/172870663.py", line 11, in objective
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result
+    self._verify_initialized()
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized
+    raise RuntimeError(
+RuntimeError: <class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.
+[33m[W 2026-06-10 13:55:42,215][0m Trial 8 failed with value None.[0m
+[33m[W 2026-06-10 13:55:42,217][0m Trial 12 failed with parameters: {} because of the following error: RuntimeError("<class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1471241/172870663.py", line 11, in objective
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result
+    self._verify_initialized()
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized
+    raise RuntimeError(
+RuntimeError: <class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.
+[33m[W 2026-06-10 13:55:42,223][0m Trial 12 failed with value None.[0m
+2026-06-10 13:55:42,228 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-0c833a55-e2e1-4635-8bc3-4952fe76662b
+State:     executing
+Task:  <Task 'optimize-0c833a55-e2e1-4635-8bc3-4952fe76662b' optimize(..., ...)>
+Exception: 'RuntimeError("<class \'distributed.client.Future\'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1471241/172870663.py", line 11, in objective\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result\n    self._verify_initialized()\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized\n    raise RuntimeError(\n'
+
+2026-06-10 13:55:42,230 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-4966b3ca-37f0-4a52-996d-eae3ae7a8679
+State:     executing
+Task:  <Task 'optimize-4966b3ca-37f0-4a52-996d-eae3ae7a8679' optimize(..., ...)>
+Exception: 'RuntimeError("<class \'distributed.client.Future\'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1471241/172870663.py", line 11, in objective\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result\n    self._verify_initialized()\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized\n    raise RuntimeError(\n'
+
+2026-06-10 13:55:42,230 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-b580c266-beca-48ca-a80c-d732e0a8ecd0
+State:     executing
+Task:  <Task 'optimize-b580c266-beca-48ca-a80c-d732e0a8ecd0' optimize(..., ...)>
+Exception: 'RuntimeError("<class \'distributed.client.Future\'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1471241/172870663.py", line 11, in objective\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result\n    self._verify_initialized()\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized\n    raise RuntimeError(\n'
+
+[33m[W 2026-06-10 13:55:42,237][0m Trial 14 failed with parameters: {} because of the following error: RuntimeError("<class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.").[0m
+Traceback (most recent call last):
+  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/tmp/ipykernel_1471241/172870663.py", line 11, in objective
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result
+    self._verify_initialized()
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized
+    raise RuntimeError(
+RuntimeError: <class 'distributed.client.Future'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.
+[33m[W 2026-06-10 13:55:42,238][0m Trial 14 failed with value None.[0m
+2026-06-10 13:55:42,242 - distributed.worker - ERROR - Compute Failed
+Key:       optimize-3e32db27-7f06-406d-8288-317c00456102
+State:     executing
+Task:  <Task 'optimize-3e32db27-7f06-406d-8288-317c00456102' optimize(..., ...)>
+Exception: 'RuntimeError("<class \'distributed.client.Future\'> object not properly initialized. This can happen if the object is being deserialized outside of the context of a Client or Worker.")'
+Traceback: '  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/study.py", line 516, in optimize\n    _optimize(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 68, in _optimize\n    _optimize_sequential(\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential\n    frozen_trial_id = _run_trial(study, func, catch)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 263, in _run_trial\n    raise func_err\n  File "/home/jovillalobos/.local/lib/python3.12/site-packages/optuna/study/_optimize.py", line 206, in _run_trial\n    value_or_values = func(trial)\n                      ^^^^^^^^^^^\n  File "/tmp/ipykernel_1471241/172870663.py", line 11, in objective\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 390, in result\n    self._verify_initialized()\n  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 332, in _verify_initialized\n    raise RuntimeError(\n'
+
+2026-06-10 13:58:28,363 - distributed.worker - ERROR - failed during get data with tcp://11.0.0.105:45429 -> None
+Traceback (most recent call last):
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/tornado/iostream.py", line 861, in _read_to_buffer
+    bytes_read = self.read_from_fd(buf)
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/tornado/iostream.py", line 1113, in read_from_fd
+    return self.socket.recv_into(buf, len(buf))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/worker.py", line 1795, in get_data
+    response = await comm.read(deserializers=serializers)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/comm/tcp.py", line 237, in read
+    convert_stream_closed_error(self, e)
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/comm/tcp.py", line 143, in convert_stream_closed_error
+    raise CommClosedError(f"in {obj}: {exc.__class__.__name__}: {exc}") from exc
+distributed.comm.core.CommClosedError: in <TCP (closed)  local=tcp://11.0.0.105:45429 remote=tcp://11.0.0.136:38580>: ConnectionResetError: [Errno 104] Connection reset by peer
+2026-06-10 13:58:28,365 - distributed.core - INFO - Lost connection to 'tcp://11.0.0.136:38580'
+Traceback (most recent call last):
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/tornado/iostream.py", line 861, in _read_to_buffer
+    bytes_read = self.read_from_fd(buf)
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/tornado/iostream.py", line 1113, in read_from_fd
+    return self.socket.recv_into(buf, len(buf))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/core.py", line 834, in _handle_comm
+    result = await result
+             ^^^^^^^^^^^^
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/core.py", line 981, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/worker.py", line 1795, in get_data
+    response = await comm.read(deserializers=serializers)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/comm/tcp.py", line 237, in read
+    convert_stream_closed_error(self, e)
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/comm/tcp.py", line 143, in convert_stream_closed_error
+    raise CommClosedError(f"in {obj}: {exc.__class__.__name__}: {exc}") from exc
+distributed.comm.core.CommClosedError: in <TCP (closed)  local=tcp://11.0.0.105:45429 remote=tcp://11.0.0.136:38580>: ConnectionResetError: [Errno 104] Connection reset by peer
+2026-06-10 13:58:28,373 - distributed.worker - ERROR - failed during get data with tcp://11.0.0.105:45429 -> None
+Traceback (most recent call last):
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/tornado/iostream.py", line 861, in _read_to_buffer
+    bytes_read = self.read_from_fd(buf)
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/tornado/iostream.py", line 1113, in read_from_fd
+    return self.socket.recv_into(buf, len(buf))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/worker.py", line 1795, in get_data
+    response = await comm.read(deserializers=serializers)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/comm/tcp.py", line 237, in read
+    convert_stream_closed_error(self, e)
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/comm/tcp.py", line 143, in convert_stream_closed_error
+    raise CommClosedError(f"in {obj}: {exc.__class__.__name__}: {exc}") from exc
+distributed.comm.core.CommClosedError: in <TCP (closed)  local=tcp://11.0.0.105:45429 remote=tcp://11.0.0.136:38574>: ConnectionResetError: [Errno 104] Connection reset by peer
+2026-06-10 13:58:28,374 - distributed.core - INFO - Lost connection to 'tcp://11.0.0.136:38574'
+Traceback (most recent call last):
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/tornado/iostream.py", line 861, in _read_to_buffer
+    bytes_read = self.read_from_fd(buf)
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/tornado/iostream.py", line 1113, in read_from_fd
+    return self.socket.recv_into(buf, len(buf))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/core.py", line 834, in _handle_comm
+    result = await result
+             ^^^^^^^^^^^^
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/core.py", line 981, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/worker.py", line 1795, in get_data
+    response = await comm.read(deserializers=serializers)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/comm/tcp.py", line 237, in read
+    convert_stream_closed_error(self, e)
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/comm/tcp.py", line 143, in convert_stream_closed_error
+    raise CommClosedError(f"in {obj}: {exc.__class__.__name__}: {exc}") from exc
+distributed.comm.core.CommClosedError: in <TCP (closed)  local=tcp://11.0.0.105:45429 remote=tcp://11.0.0.136:38574>: ConnectionResetError: [Errno 104] Connection reset by peer
+2026-06-10 13:58:28,375 - distributed.worker - ERROR - failed during get data with tcp://11.0.0.105:45429 -> None
+Traceback (most recent call last):
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/tornado/iostream.py", line 861, in _read_to_buffer
+    bytes_read = self.read_from_fd(buf)
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/tornado/iostream.py", line 1113, in read_from_fd
+    return self.socket.recv_into(buf, len(buf))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/worker.py", line 1795, in get_data
+    response = await comm.read(deserializers=serializers)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/comm/tcp.py", line 237, in read
+    convert_stream_closed_error(self, e)
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/comm/tcp.py", line 143, in convert_stream_closed_error
+    raise CommClosedError(f"in {obj}: {exc.__class__.__name__}: {exc}") from exc
+distributed.comm.core.CommClosedError: in <TCP (closed)  local=tcp://11.0.0.105:45429 remote=tcp://11.0.0.136:38554>: ConnectionResetError: [Errno 104] Connection reset by peer
+2026-06-10 13:58:28,376 - distributed.core - INFO - Lost connection to 'tcp://11.0.0.136:38554'
+Traceback (most recent call last):
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/tornado/iostream.py", line 861, in _read_to_buffer
+    bytes_read = self.read_from_fd(buf)
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/tornado/iostream.py", line 1113, in read_from_fd
+    return self.socket.recv_into(buf, len(buf))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/core.py", line 834, in _handle_comm
+    result = await result
+             ^^^^^^^^^^^^
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/core.py", line 981, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/worker.py", line 1795, in get_data
+    response = await comm.read(deserializers=serializers)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/comm/tcp.py", line 237, in read
+    convert_stream_closed_error(self, e)
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/comm/tcp.py", line 143, in convert_stream_closed_error
+    raise CommClosedError(f"in {obj}: {exc.__class__.__name__}: {exc}") from exc
+distributed.comm.core.CommClosedError: in <TCP (closed)  local=tcp://11.0.0.105:45429 remote=tcp://11.0.0.136:38554>: ConnectionResetError: [Errno 104] Connection reset by peer
+2026-06-10 13:58:28,376 - distributed.worker - ERROR - Failed to communicate with scheduler during heartbeat.
+Traceback (most recent call last):
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/tornado/iostream.py", line 861, in _read_to_buffer
+    bytes_read = self.read_from_fd(buf)
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/tornado/iostream.py", line 1113, in read_from_fd
+    return self.socket.recv_into(buf, len(buf))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/worker.py", line 1267, in heartbeat
+    response = await retry_operation(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/utils_comm.py", line 416, in retry_operation
+    return await retry(
+           ^^^^^^^^^^^^
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/utils_comm.py", line 395, in retry
+    return await coro()
+           ^^^^^^^^^^^^
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/core.py", line 1259, in send_recv_from_rpc
+    return await send_recv(comm=comm, op=key, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/core.py", line 1018, in send_recv
+    response = await comm.read(deserializers=deserializers)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/comm/tcp.py", line 237, in read
+    convert_stream_closed_error(self, e)
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/comm/tcp.py", line 143, in convert_stream_closed_error
+    raise CommClosedError(f"in {obj}: {exc.__class__.__name__}: {exc}") from exc
+distributed.comm.core.CommClosedError: in <TCP (closed) ConnectionPool.heartbeat_worker local=tcp://11.0.0.105:42814 remote=tcp://11.0.0.136:8786>: ConnectionResetError: [Errno 104] Connection reset by peer
+2026-06-10 13:58:28,378 - distributed.core - INFO - Connection to tcp://11.0.0.136:8786 has been closed.
+2026-06-10 13:58:28,378 - distributed.worker - INFO - Stopping worker at tcp://11.0.0.105:45429. Reason: worker-handle-scheduler-connection-broken
+2026-06-10 13:58:28,383 - distributed.nanny - INFO - Closing Nanny gracefully at 'tcp://11.0.0.105:43005'. Reason: worker-handle-scheduler-connection-broken
+2026-06-10 13:58:28,385 - distributed.worker - INFO - Removing Worker plugin CUDFSetup-60271485-fc76-4fbd-adb3-e0a30f67a8b5
+2026-06-10 13:58:28,385 - distributed.worker - INFO - Removing Worker plugin PreImport-0dcc05c7-1703-4a9e-a3bf-bfa1a7c1cbc1
+2026-06-10 13:58:28,385 - distributed.worker - INFO - Removing Worker plugin CPUAffinity-15723606-fa21-4e50-aff0-b0199bef43c7
+2026-06-10 13:58:28,385 - distributed.worker - INFO - Removing Worker plugin RMMSetup-1ccc6bd5-b91c-4955-97be-c6ba2c6a8047
+2026-06-10 13:58:28,385 - distributed.worker - INFO - Removing Worker plugin shuffle
+2026-06-10 13:58:30,500 - distributed.client - ERROR - 
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/comm/core.py", line 342, in connect
+    comm = await wait_for(
+           ^^^^^^^^^^^^^^^
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/utils.py", line 1923, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/comm/tcp.py", line 560, in connect
+    convert_stream_closed_error(self, e)
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/comm/tcp.py", line 143, in convert_stream_closed_error
+    raise CommClosedError(f"in {obj}: {exc.__class__.__name__}: {exc}") from exc
+distributed.comm.core.CommClosedError: in <distributed.comm.tcp.TCPConnector object at 0x7fdf134c0290>: ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/utils.py", line 818, in wrapper
+    return await func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 1519, in _reconnect
+    await self._ensure_connected(timeout=timeout)
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/client.py", line 1549, in _ensure_connected
+    comm = await connect(
+           ^^^^^^^^^^^^^^
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/comm/core.py", line 366, in connect
+    await asyncio.sleep(backoff)
+  File "/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/asyncio/tasks.py", line 665, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+2026-06-10 13:58:30,504 - distributed.nanny - INFO - Worker closed
+2026-06-10 13:58:32,507 - distributed.nanny - ERROR - Worker process died unexpectedly
+2026-06-10 13:58:37,821 - distributed.nanny - INFO - Closing Nanny at 'tcp://11.0.0.105:43005'. Reason: nanny-close-gracefully
+2026-06-10 13:58:37,823 - distributed.nanny - INFO - Nanny at 'tcp://11.0.0.105:43005' closed.

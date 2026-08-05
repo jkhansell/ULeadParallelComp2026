@@ -1,0 +1,42 @@
+Run 'mamba init' to be able to run mamba activate/deactivate
+and start a new shell session. Or use conda to activate/deactivate.
+
+2026-06-10 14:35:49,386 - distributed.nanny - INFO -         Start Nanny at: 'tcp://11.0.0.105:42651'
+2026-06-10 14:35:51,374 - distributed.diskutils - INFO - Found stale lock file and directory '/tmp/dask-scratch-space/worker-uv3s6hh0', purging
+2026-06-10 14:35:51,392 - distributed.preloading - INFO - Creating preload: dask_cuda.initialize
+2026-06-10 14:35:51,392 - distributed.preloading - INFO - Import preload module: dask_cuda.initialize
+2026-06-10 14:35:51,914 - distributed.preloading - INFO - Run preload setup: dask_cuda.initialize
+2026-06-10 14:35:51,915 - distributed.worker - INFO -       Start worker at:     tcp://11.0.0.105:38891
+2026-06-10 14:35:51,915 - distributed.worker - INFO -          Listening to:     tcp://11.0.0.105:38891
+2026-06-10 14:35:51,915 - distributed.worker - INFO -           Worker name:             SLURMCluster-0
+2026-06-10 14:35:51,915 - distributed.worker - INFO -          dashboard at:           11.0.0.105:43869
+2026-06-10 14:35:51,915 - distributed.worker - INFO - Waiting to connect to:      tcp://11.0.0.136:8786
+2026-06-10 14:35:51,915 - distributed.worker - INFO - -------------------------------------------------
+2026-06-10 14:35:51,915 - distributed.worker - INFO -               Threads:                          4
+2026-06-10 14:35:51,915 - distributed.worker - INFO -                Memory:                  27.94 GiB
+2026-06-10 14:35:51,915 - distributed.worker - INFO -       Local Directory: /tmp/dask-scratch-space/worker-bosjrz7_
+2026-06-10 14:35:51,915 - distributed.worker - INFO - Starting Worker plugin RMMSetup-7a771343-79c3-4a02-8a6f-d6d5ca11e791
+2026-06-10 14:35:51,915 - distributed.worker - INFO - Starting Worker plugin PreImport-fe38e805-fc01-488c-b58d-31cb0f3c7804
+2026-06-10 14:35:51,915 - distributed.worker - INFO - Starting Worker plugin CPUAffinity-c60e9912-3026-4f3c-88ce-76cdb820732c
+2026-06-10 14:35:51,915 - distributed.worker - INFO - Starting Worker plugin CUDFSetup-e019b9fd-8ff1-444b-a5ac-eaab2ea59d6e
+2026-06-10 14:35:52,319 - distributed.worker - INFO - -------------------------------------------------
+2026-06-10 14:35:52,400 - distributed.worker - INFO - Starting Worker plugin shuffle
+2026-06-10 14:35:52,402 - distributed.worker - INFO -         Registered to:      tcp://11.0.0.136:8786
+2026-06-10 14:35:52,402 - distributed.worker - INFO - -------------------------------------------------
+2026-06-10 14:35:52,403 - distributed.core - INFO - Starting established connection to tcp://11.0.0.136:8786
+2026-06-10 14:36:03,544 - distributed.worker - INFO - Run out-of-band function 'gpu_test'
+2026-06-10 14:36:07,177 - distributed.core - INFO - Event loop was unresponsive in Worker for 3.65s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/protocol/pickle.py:92: ExperimentalWarning: DaskStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  return pickle.loads(x)
+2026-06-10 14:37:39,676 - distributed.core - INFO - Event loop was unresponsive in Worker for 36.91s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+2026-06-10 14:39:22,585 - distributed.core - INFO - Event loop was unresponsive in Worker for 102.91s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+2026-06-10 14:41:02,959 - distributed.core - INFO - Event loop was unresponsive in Worker for 100.32s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+2026-06-10 14:42:39,531 - distributed.core - INFO - Event loop was unresponsive in Worker for 94.71s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+[32m[I 2026-06-10 14:42:54,268][0m Trial 3 finished with value: 0.8158260128965711 and parameters: {'n_estimators': 100, 'max_depth': 9, 'max_features': 0.5987690271023244}. Best is trial 3 with value: 0.8158260128965711.[0m
+[32m[I 2026-06-10 14:42:54,634][0m Trial 0 finished with value: 0.8222496415764166 and parameters: {'n_estimators': 200, 'max_depth': 15, 'max_features': 0.5137854317033774}. Best is trial 0 with value: 0.8222496415764166.[0m
+[32m[I 2026-06-10 14:42:55,020][0m Trial 2 finished with value: 0.8142433499647356 and parameters: {'n_estimators': 275, 'max_depth': 7, 'max_features': 0.8127584730151204}. Best is trial 0 with value: 0.8222496415764166.[0m
+[32m[I 2026-06-10 14:42:55,020][0m Trial 1 finished with value: 0.820071104252848 and parameters: {'n_estimators': 225, 'max_depth': 13, 'max_features': 0.5460370600131443}. Best is trial 0 with value: 0.8222496415764166.[0m
+/opt/python/mamba3/envs/rapids-23.10/lib/python3.12/site-packages/distributed/protocol/pickle.py:92: ExperimentalWarning: DaskStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  return pickle.loads(x)
+2026-06-10 14:42:58,409 - distributed.worker.memory - WARNING - Unmanaged memory use is high. This may indicate a memory leak or the memory may not be released to the OS; see https://distributed.dask.org/en/latest/worker-memory.html#memory-not-released-back-to-the-os for more information. -- Unmanaged memory: 19.67 GiB -- Worker memory limit: 27.94 GiB
+slurmstepd: error: *** JOB 563927 ON nukwa-00.cnca CANCELLED AT 2026-06-10T14:44:14 ***
